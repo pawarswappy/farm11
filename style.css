@@ -562,7 +562,28 @@ button i {
 button span {
   margin-top: 5px;
 }
+#callButton,#whbutton{
+  border-radius: 20px;
+  padding: 0px;
+}
+#callButton>img{
+border-radius: 20px;
+}
 
+#whbutton>img{
+  border-radius: 20px;
+  }
+button i {
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+button span {
+  margin-top: 5px;
+}
+.explore-btn{
+color: #fff;
+}
 /*------------home------------*/
 /*------------about------------*/
 .top {
