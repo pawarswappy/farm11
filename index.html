@@ -279,13 +279,23 @@
         </section>
 
 
-        <button id="callButton" style="position: fixed ; bottom: 5%; right: 5%; padding: 20px;">
-            📞
+        
+        <button  id="whbutton" onclick="window.open('https://wa.me/919876543210', '_blank')"
+         style="position: fixed ; bottom: 5%; left: 5%; ">
+            <img src="whatsapp.webp" alt="error">
+        </button>
+
+        <button id="callButton" style="position: fixed ; bottom: 5%; right: 5%; ">
+            <img src="phone.webp" alt="error">
         </button>
         
         <script>
             document.getElementById("callButton").addEventListener("click", function () {
                 window.location.href = "tel:+91 9833113472"; // Replace with the actual phone number
+            });
+
+            document.getElementById("whbutton").addEventListener("click", function () {
+                window.location.href = "'https://wa.me/919876543210', '_blank'"; // Replace with the actual phone number
             });
         </script>
       
