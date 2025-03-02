@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact</title>
+
+</head>
+
+<body>
+
+
+    <section class="head">
+        <div class="container1 flex1 flex12">
+            <div class="scoial">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+            <div class="logod">
+                <img src="logo1234-removebg-preview.webp" style="height: 50px; color: aliceblue;" alt="cvbghnjmdxcfvgbhnjmk" />
+            </div>
+            <div class="address" onclick="window.open('https://maps.google.com/?q=19.000587,73.432442', '_blank')">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>PROPOSED RESIDENTIAL BUNGALOWS , KARJAT</span>
+            </div>
+        </div>
+    </section>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar flex1">
+                <div class="sticky_logo logo">
+                    <img src="image/logo.png" alt="" />
+                </div>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="Amenities.html">Amenities</a></li>
+
+                    <!-- <li><a href="#room">room</a></li> -->
+                    <li><a href="gallary.html">gallary</a></li>
+                    <li><a href="contact.html"
+                            style="text-decoration: underline; text-underline-offset: 10px;  text-decoration-thickness:2px ;">contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="head_contact">
+                    <!-- <i class="fas fa-phone-volume"></i> -->
+                    <!-- <span>+91 9833113472</span> -->
+                    <img src="logo1234-removebg-preview.webp" alt="" />
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobliemmenu);
+
+        function mobliemmenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+
+    <div class="container-contact-img">
+        <div class="image-container">
+            <img src="contact (2).webp" alt="Background Image">
+            <div class="text">
+                <h1>Contact</h1>
+                <p class="breadcrumb">
+                    <a href="index.html">Home</a> &gt; Contact
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="heading-contact">
+        <h1 style="text-align: center;">" Luxury Villas and Bungalows in Karjat "</h1>
+    </div>
+    <div class="card-container">
+
+
+        <!-- Address Card -->
+        <div class="card"
+            onclick="window.open('https://www.google.com/maps/place/Akshar+Business+Park/@19.0788388,73.0107879,793m/data=!3m1!1e3!4m10!1m2!2m1!1sM%2FS.+Infinity+Buildstruct+Akshar+Business+Park+Z+Wing+Office+Number+1123,+Sector+25,+Vashi,+Navi+Mumbai,+Maharashtra+400703!3m6!1s0x3be7c168b615608d:0xc4724ace45d87091!8m2!3d19.0788337!4d73.0133628!15sCntNL1MuIEluZmluaXR5IEJ1aWxkc3RydWN0IEFrc2hhciBCdXNpbmVzcyBQYXJrIFogV2luZyBPZmZpY2UgTnVtYmVyIDExMjMsIFNlY3RvciAyNSwgVmFzaGksIE5hdmkgTXVtYmFpLCBNYWhhcmFzaHRyYSA0MDA3MDMiA4gBAZIBEGNvcnBvcmF0ZV9vZmZpY2XgAQA!16s%2Fg%2F11hzjg9_5v?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D', '_blank')">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <h3>Booking and Selling Address </h3>
+            <p style="text-align: justify !important; ">M/S. Infinity Buildstruct
+                Akshar Business Park
+                Z Wing Office Number 1123,
+                Sector 25, Vashi, Navi Mumbai, Maharashtra 400703</p>
+        </div>
+
+
+        <!-- Email Card -->
+        <div class="card" onclick="window.location.href='mailto:example@email.com'">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+            <h3>Email id</h3>
+            <p style="width: 100%;">info@resolveinttrade .com</p>
+        </div>
+
+        <!-- Phone Card -->
+        <div class="card" onclick="window.open('tel:+919876543210')">
+            <div class="icon"><i class="fas fa-phone-alt"></i></div>
+            <h3>Phone</h3>
+            <p>+971 555060896</p>
+        </div>
+
+
+        <!-- Address Card -->
+        <div class="card" onclick="window.open('https://maps.google.com/?q=19.000587,73.432442', '_blank')">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <h3> Bungalows Address</h3>
+            <p style="text-align: justify !important; ">PROPOSED RESIDENTIAL BUNGALOWS on S.No.138(new)
+
+               
+
+                At Village KOTIMBE,Tal- KARJAT, Dist RAIGAD</p>
+        </div>
+    </div>
+
+
+
+
+    <div class="container2">
+        <div class="left-content">
+            <h2>M/S. Infinity Buildstruct
+            </h2>
+            <p>Arihant Superstructures Ltd. is a prominent real estate company that holds the distinction of being
+                listed on prestigious stock exchanges such as the NSE, BSE.</p>
+            <p>We take immense pride in delivering properties of exceptional value with a harmonious blend of amenities,
+                carefully thought-out layouts, and sustainable, comfortable living.</p>
+        </div>
+        <div class="form-container">
+            <form>
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <label for="phone">Your Phone *</label>
+                <div class="phone-input" style="display: flex; justify-content: space-between; ">
+                    <select style="width: 18%;">
+                        <option value="+91">+91</option>
+                        <option value="+86">+86</option>
+                        <option value="+1">+1</option>
+                        <option value="+44">+44</option>
+                        <option value="+61">+61</option>
+
+                    </select>
+                    <input style="width: 78%;" type="tel" id="phone" placeholder="Enter your phone" required>
+                </div>
+
+                <label for="type">Your Type</label>
+                <select id="type">
+                    <option>Please Select</option>
+                    <option>Buyer</option>
+                    <option>Investor</option>
+
+                </select>
+
+                <button type="submit">SEND MESSAGE</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3772.4340274267847!2d73.42986707520346!3d19.000586982188498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDAwJzAyLjEiTiA3M8KwMjUnNTYuOCJF!5e0!3m2!1sen!2sin!4v1740077968297!5m2!1sen!2sin"
+        width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+
+
+
+        <button id="callButton" style="position: fixed ; bottom: 5%; right: 5%; padding: 20px; width: auto;">
+            📞
+        </button>
+        
+        <script>
+            document.getElementById("callButton").addEventListener("click", function () {
+                window.location.href = "tel:+91 9833113472"; // Replace with the actual phone number
+            });
+        </script>
+
+
+
+    <footer class="footer" style="margin-top: 0% !important;">
+        <div class="containerlast">
+            <!-- Hotel Location Section -->
+            <div>
+                <h4>Bungalows  Location </h4>
+                <h5 style="font-size: 15px; color:#CC8C18;">Booking and Selling Address :-</h5>
+                <p class="address-footer" onclick="window.open('https://www.google.com/maps/place/Akshar+Business+Park/@19.0788388,73.0107879,793m/data=!3m1!1e3!4m10!1m2!2m1!1sM%2FS.+Infinity+Buildstruct+Akshar+Business+Park+Z+Wing+Office+Number+1123,+Sector+25,+Vashi,+Navi+Mumbai,+Maharashtra+400703!3m6!1s0x3be7c168b615608d:0xc4724ace45d87091!8m2!3d19.0788337!4d73.0133628!15sCntNL1MuIEluZmluaXR5IEJ1aWxkc3RydWN0IEFrc2hhciBCdXNpbmVzcyBQYXJrIFogV2luZyBPZmZpY2UgTnVtYmVyIDExMjMsIFNlY3RvciAyNSwgVmFzaGksIE5hdmkgTXVtYmFpLCBNYWhhcmFzaHRyYSA0MDA3MDMiA4gBAZIBEGNvcnBvcmF0ZV9vZmZpY2XgAQA!16s%2Fg%2F11hzjg9_5v?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D', '_blank')">M/S. Infinity Buildstruct  <br>
+
+                    Akshar Business Park
+                    Z Wing Office Number 1123,
+                    Sector 25, Vashi, Navi Mumbai, Maharashtra 400703</p>
+                
+
+                <h5 style="font-size: 15px; color:#CC8C18;">Bungalows Address :-</h5>
+                <p class="address-footer" onclick="window.open('https://maps.google.com/?q=19.000587,73.432442', '_blank')">PROPOSED RESIDENTIAL BUNGALOWS 
+
+                    At Village KOTIMBE,Tal- KARJAT, Dist RAIGAD</p>
+                
+                
+             
+                
+            </div>
+
+            <!-- More Links Section -->
+            <div>
+                <h4>More Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Our Office</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <div class="contact-info address-footer">
+                        <i class="fas fa-envelope"></i>
+                        <p  style="margin-bottom: 0% !important;" class="contact-info address-footer">hotelambassadorplaza@gmail.com</p>
+                    </div>
+                    <div class="contact-info address-footer">
+                        <i class="fas fa-phone"></i>
+                        <p style="margin-bottom: 0% !important;" class="contact-info address-footer"> +91 9545785974</p>
+                    </div>
+                  
+                </ul>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div>
+                <h4>Newsletter</h4>
+                <div class="newsletter">
+                    <input type="email" placeholder="Enter Your Email Here" />
+                    <button>Subscribe</button>
+                </div>
+                <h4 style="margin-top: 10px;">Stay Connected</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="#"><i class="fab fa-vimeo"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

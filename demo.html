@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <style>
+        .container32 {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            margin: 20px 0;
+        }
+
+        .center {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 20px;
+            padding: 20px 10%;
+        }
+
+        .box {
+            width: 100%;
+            max-width: 300px;
+            text-align: center;
+            overflow: hidden;
+            transition: 0.3s;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            border-bottom: 5px solid rgb(241, 198, 7);
+            border-top: 6px solid rgb(237, 184, 61);
+            border-top-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+            cursor: pointer;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        .content32 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content32 img {
+            width: 100%;
+            height: 250px;
+        }
+
+        .hover {
+            transform: scale(0);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            transition: all 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* padding: 20px; */
+            /* border-radius: 25px; */
+            top: 0;
+            left: 0;
+        }
+
+        .hover h1,
+        .hover p {
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .hover h1 {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .hover p {
+            font-size: 0.9rem;
+            padding: 0 10px;
+        }
+
+        .box:hover .hover {
+            transform: scale(1);
+        }
+
+        @media (max-width: 768px) {
+            .center {
+                justify-content: space-between;
+            }
+            .box {
+                width: 48%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .center {
+                flex-direction: column;
+                align-items: center;
+            }
+            .box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container32">
+        <h1>Future Infrastructure</h1>
+        <div class="center">
+            <div class="box">
+                <div class="content32">
+                    <img src="imresizer-1740680646824.webp" alt="">
+                </div>
+                <div class="hover">
+                    <h1>Mumbai Trans Harbour Link</h1>
+                    <p>India's longest sea bridge from Panvel connects Navi Mumbai, JNPT Port, and Mumbai-Pune E-way.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content32">
+                    <img src="imresizer-1740681301584.webp" alt="">
+                </div>
+                <div class="hover">
+                    <h1>Panvel-Karjat Rail Corridor</h1>
+                    <p>This ambitious rail project will increase property demand in Panvel, Karjat, and nearby areas.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content32">
+                    <img src="imresizer-1740681699848.webp" alt="">
+                </div>
+                <div class="hover">
+                    <h1>Navi Mumbai International Airport</h1>
+                    <p>The airport at Ulwe will be connected via metro, road, rail, and waterways for better convenience.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content32">
+                    <img src="imresizer-1740682340456.webp" alt="">
+                </div>
+                <div class="hover">
+                    <h1>Panvel-Bhimashankar Highway</h1>
+                    <p>This highway will reduce travel time from Karjat to Panvel and boost connectivity.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content32">
+                    <img src="imresizer-1740682628505.webp" alt="">
+                </div>
+                <div class="hover">
+                    <h1>Academic Excellence Centre</h1>
+                    <p>Vijaybhoomi University, JIO University, and a proposed medical college in Karjat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

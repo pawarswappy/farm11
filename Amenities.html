@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel About Section</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Amenities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <style>
+           *{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Premium-Amenities{
+  font-size: 2.5rem;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  color: #444;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
+  max-width: 80rem;
+}
+
+.cols{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+          padding-bottom: 50px;
+}
+
+.col{
+  width: calc(25% - 2rem);
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.container45{
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.front,
+.back{
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+  border-radius: 10px;
+  background-position: center;
+  -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  text-align: center;
+  min-height: 280px;
+  height: auto;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.back{
+  background: #cedce7;
+  background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+  background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+  background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+}
+
+.front:after{
+  position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #000407a8;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 10px;
+}
+.container45:hover .front,
+.container45:hover .back{
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.inner{
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+            transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+            perspective: inherit;
+    z-index: 2;
+}
+
+.container45 .back{
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.container45 .front{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.container45:hover .back{
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.container45:hover .front{
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.front .inner p{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.front .inner p:after{
+  content: '';
+  width: 4rem;
+  height: 2px;
+  position: absolute;
+  background: #C6D4DF;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -.75rem;
+}
+
+.front .inner span{
+  color: rgba(255,255,255,0.7);
+  font-family: 'Montserrat';
+  font-weight: 300;
+}
+
+@media screen and (max-width: 64rem){
+  .col{
+    width: calc(33.333333% - 2rem);
+  }
+}
+
+@media screen and (max-width: 48rem){
+  .col{
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 32rem){
+  .col{
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+}
+.bungalow-a{
+    padding: 0px 10% 50px;
+    text-align: justify;
+
+
+}
+.bungalow-a span{
+    color: #444;
+
+}
+   </style>
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+    <section class="head">
+        <div class="container1 flex1 flex12">
+            <div class="scoial">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"> </i>
+            </div>
+            <div class="logod">
+                <img src="logo1234-removebg-preview.webp" style="height: 50px; color: aliceblue;" alt="cvbghnjmdxcfvgbhnjmk" />
+            </div>
+            <div class="address" onclick="window.open('https://maps.google.com/?q=19.000587,73.432442', '_blank')">
+                <i class="fas fa-map-marker-alt"></i>
+
+                <span>PROPOSED RESIDENTIAL BUNGALOWS , KARJAT</span>
+            </div>
+        </div>
+    </section>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar flex1">
+                <div class="sticky_logo logo">
+                    <img src="image/logo.png" alt="" />
+                </div>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="Amenities.html"
+                            style="text-decoration: underline; text-underline-offset: 10px;  text-decoration-thickness:2px ;">Amenities</a>
+                    </li>
+                    <!-- <li><a href="#room">room</a></li> -->
+                    <li><a href="gallary.html">gallary</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="head_contact">
+                    <!-- <i class="fas fa-phone-volume"></i> -->
+                    <!-- <span>+91 9833113472</span> -->
+                    <img src="logo1234-removebg-preview.webp" alt="" />
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobliemmenu);
+
+        function mobliemmenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+
+
+
+    <div class="about-image-container">
+        <img src="pool122.webp" alt="Background Image">
+        <div class="text">
+            <h1>Amenities</h1>
+            <p class="breadcrumb">
+                <a href="index.html">Home</a> &gt; Amenities
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <h2 class="amenities-heading">Bungalow Amenities</h2>
+    <p class="bungalow-a"><span>Experience world-class facilities designed for comfort and convenience. Enjoy a premium swimming pool, a fully equipped gym, a vibrant children’s park, a serene bird zone, a multi-sports turf, and a fine-dining restaurant. Whether for relaxation or adventure, our amenities ensure an unforgettable experience for all visitors.</span></p>
+
+    <div class="container41">
+        <div class="card">
+            <h3>Luxury & Comfort</h3>
+            <ul>
+                <li>Spacious & Elegantly Designed Rooms</li>
+                <li>Premium King & Queen Size Beds</li>
+                <li>Private Balcony with Scenic Views</li>
+                <li>Air Conditioning & Heating</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Entertainment & Connectivity</h3>
+            <ul>
+                <li>High-Speed WiFi & Smart TV</li>
+                <li>Indoor Board Games & Books</li>
+                <li>Music System & Bluetooth Speakers</li>
+                <li>Bluetooth speakers for a personalized music experience.</li>
+
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Kitchen & Dining</h3>
+            <ul>
+                <li>Fully Equipped Kitchen</li>
+                <li>Private Dining Area & Open Terrace Seating</li>
+                <li>Complimentary Tea & Coffee</li>
+                <li>Elegant dinnerware set for a fine dining experience.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Outdoor & Nature</h3>
+            <ul>
+                <li>Private Garden & Lawn</li>
+                <li>Swimming Pool & Sunbeds</li>
+                <li>Outdoor Fireplace & Barbecue Setup</li>
+                <li>Private gazebo with scenic views for a peaceful retreat</li>
+
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Wellness & Relaxation</h3>
+            <ul>
+                <li>Jacuzzi & Spa Services (on request)</li>
+                <li>Yoga & Meditation Area</li>
+                <li>Hammocks & Relaxation Lounges</li>
+                <li>Tranquil outdoor seating with a soothing waterfall feature for ultimate relaxation.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Safety & Security</h3>
+            <ul>
+                <li>24/7 CCTV Surveillance</li>
+                <li>Secured Parking Area</li>
+                <li>First Aid Kit & Fire Extinguisher</li>
+                <li>Digital smart locks for secure access.</li>
+
+
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Additional Services</h3>
+            <ul>
+                <li>Daily Housekeeping</li>
+                <li>Personal Butler & Chef (on request)</li>
+                <li>Sightseeing & Travel Assistance</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Dedicated Workspace</h3>
+            <ul>
+                <li>Distraction-free workspace</li>
+                <li>Quiet and comfortable environment</li>
+                <li>Outdoor seating area</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <div class="wrapper">
+        <h1 class="Premium-Amenities">_____ Premium Amenities _____</h1>
+        <div class="cols">
+            <div class="col">
+              <div class="container45 ">
+                <div class="front" style="background-image: url(tennis-ball-tennis-court\ \(1\).webp)">
+                  <div class="inner">
+                    <p>Cricket </p>
+                    <span>Turf </span>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p>"Premium artificial turf for sports, events, and recreation. Durable, safe, and high-quality!".</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" >
+              <div class="container45">
+                <div class="front" style="background-image: url(badminton.webp)">
+                  <div class="inner">
+                    <p>Indoor </p>
+                    <span>Outdoor Games</span>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p>"Enjoy top-quality turf for indoor and outdoor games. Perfect for football, cricket, and more!."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" >
+              <div class="container45">
+                <div class="front" style="background-image: url(zoo1.webp)">
+                  <div class="inner">
+                    <p>Wildlife </p>
+                    <span>Park</span>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p>"Explore the wild at our animal zoo! See exotic species up close in a natural habitat."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" >
+              <div class="container45">
+                <div class="front" style="background-image: url(pool2.webp)">
+                  <div class="inner">
+                    <p>Swimming </p>
+                    <span>Pool</span>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p>"Relax and refresh in our crystal-clear swimming pool. Perfect for fun, fitness, and leisure!"</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" >
+              <div class="container45">
+                <div class="front" style="background-image: url(kpa1.webp)">
+                  <div class="inner">
+                    <p>Children's </p>
+                    <span>Park</span>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p>"Children's Park: A fun and safe place for kids to play, explore, and enjoy outdoor activities!"</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" >
+              <div class="container45">
+                <div class="front" style="background-image: url(gym2.webp)">
+                  <div class="inner">
+                    <p> Modern</p>
+                    <span>Gym!</span>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p>"Achieve your fitness goals at our gym! Modern equipment, expert trainers, and a motivating environment."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" >
+              <div class="container45">
+                <div class="front" style="background-image: url(best-hotels-travel-thailand-tourism-wallpaper-preview_1_.webp)">
+                  <div class="inner">
+                    <p>Restaurant</p>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p>"Experience delicious flavors at our restaurant! Enjoy fresh, flavorful dishes in a cozy ambiance."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" >
+              <div class="container45">
+                <div class="front" style="background-image: url(happy-young-woman-feeding-pigeons.webp)">
+                  <div class="inner">
+                    <p>Birds </p>
+                    <span>Zone</span>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p>"Welcome to the Bird Zone! Discover exotic birds in a natural and peaceful environment."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+
+
+
+
+
+
+
+
+
+
+    <button id="callButton" style="position: fixed ; bottom: 5%; right: 5%; padding: 20px;">
+        📞
+    </button>
+
+    <script>
+        document.getElementById("callButton").addEventListener("click", function () {
+            window.location.href = "tel:+91 9833113472"; // Replace with the actual phone number
+        });
+    </script>
+
+
+    <footer class="footer" style="margin-top: 0% !important;">
+        <div class="containerlast">
+            <!-- Hotel Location Section -->
+            <div>
+                <h4>Bungalows Location </h4>
+                <h5 style="font-size: 15px; color:#CC8C18;">Booking and Selling Address :-</h5>
+                <p class="address-footer" onclick="window.open('https://www.google.com/maps/place/Akshar+Business+Park/@19.0788388,73.0107879,793m/data=!3m1!1e3!4m10!1m2!2m1!1sM%2FS.+Infinity+Buildstruct+Akshar+Business+Park+Z+Wing+Office+Number+1123,+Sector+25,+Vashi,+Navi+Mumbai,+Maharashtra+400703!3m6!1s0x3be7c168b615608d:0xc4724ace45d87091!8m2!3d19.0788337!4d73.0133628!15sCntNL1MuIEluZmluaXR5IEJ1aWxkc3RydWN0IEFrc2hhciBCdXNpbmVzcyBQYXJrIFogV2luZyBPZmZpY2UgTnVtYmVyIDExMjMsIFNlY3RvciAyNSwgVmFzaGksIE5hdmkgTXVtYmFpLCBNYWhhcmFzaHRyYSA0MDA3MDMiA4gBAZIBEGNvcnBvcmF0ZV9vZmZpY2XgAQA!16s%2Fg%2F11hzjg9_5v?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D', '_blank')">M/S. Infinity Buildstruct <br>
+
+                    Akshar Business Park
+                    Z Wing Office Number 1123,
+                    Sector 25, Vashi, Navi Mumbai, Maharashtra 400703</p>
+
+
+                <h5 style="font-size: 15px; color:#CC8C18;">Bungalows Address :-</h5>
+                <p class="address-footer" onclick="window.open('https://maps.google.com/?q=19.000587,73.432442', '_blank')">PROPOSED RESIDENTIAL BUNGALOWS
+
+                    At Village KOTIMBE,Tal- KARJAT, Dist RAIGAD</p>
+
+
+
+
+            </div>
+
+            <!-- More Links Section -->
+            <div>
+                <h4>More Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Our Office</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <div class="contact-info address-footer">
+                        <i class="fas fa-envelope"></i>
+                        <p style="margin-bottom: 0% !important;"class="contact-info address-footer" >hotelambassadorplaza@gmail.com</p>
+                    </div>
+                    <div class="contact-info address-footer">
+                        <i class="fas fa-phone"></i>
+                        <p style="margin-bottom: 0% !important;" class="contact-info address-footer"> +91 9545785974</p>
+                    </div>
+
+                </ul>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div>
+                <h4>Newsletter</h4>
+                <div class="newsletter">
+                    <input type="email" placeholder="Enter Your Email Here" />
+                    <button>Subscribe</button>
+                </div>
+                <h4 style="margin-top: 10px;">Stay Connected</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="#"><i class="fab fa-vimeo"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

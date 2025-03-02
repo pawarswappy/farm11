@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Responsive Slider with Navbar</title>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+        <!-- <link rel="stylesheet" href="demo.css"> -->
+    </head>
+
+    <body>
+        <section class="head">
+            <div class="container1 flex1 flex12">
+                <div class="scoial">
+                    <i class="fab fa-facebook-f"  onclick="window.open('https://www.facebook.com/', '_blank')"></i>
+                    <i class="fab fa-twitter"onclick="window.open('https://www.twitter.com/', '_blank')"></i>
+                    <i class="fab fa-instagram"onclick="window.open('https://www.instagram.com/', '_blank')"></i>
+                    <i class="fab fa-youtube" onclick="window.open('https://www.youtube.com/', '_blank')"> </i>
+                </div>
+                <div class="logod">
+                    <img src="logo1234-removebg-preview.webp" style="height: 50px; color: aliceblue;" alt="cvbghnjmdxcfvgbhnjmk" />
+                </div>
+                <div class="address" onclick="window.open('https://maps.google.com/?q=19.000587,73.432442', '_blank')">
+                    <i class="fas fa-map-marker-alt" ></i>
+                    
+                    <span>PROPOSED RESIDENTIAL BUNGALOWS , KARJAT</span>
+                </div>
+            </div>
+        </section>
+
+        <header class="header">
+            <div class="container">
+                <nav class="navbar flex1">
+                    <div class="sticky_logo logo">
+                        <img src="image/logo.png" alt="" />
+                    </div>
+
+                    <ul class="nav-menu">
+                        <li><a href="index.html" style="text-decoration: underline; text-underline-offset: 10px;  text-decoration-thickness:2px ;">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="Amenities.html">Amenities</a></li>
+                        <!-- <li><a href="#room">room</a></li> -->
+                        <li><a href="gallary.html">gallary</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                    <div class="head_contact">
+                        <!-- <i class="fas fa-phone-volume"></i> -->
+                        <!-- <span>+91 9833113472</span> -->
+                        <img src="logo1234-removebg-preview.webp" alt="" />
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".nav-menu");
+
+            hamburger.addEventListener("click", mobliemmenu);
+
+            function mobliemmenu() {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            }
+
+            window.addEventListener("scroll", function () {
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            });
+        </script>
+
+        <section class="home" id="home">
+            <div class="container">
+                <h1>Make Memories</h1>
+                <p>Discover the place where you have fun & enjoy a lot</p>
+
+                <div class="content grid">
+                    <div class="box">
+                        <span>ARRIVAL DATE </span> <br />
+                        <input type="date" placeholder="29/20/2021" />
+                    </div>
+                    <div class="box">
+                        <span>DEPARTURE DATE </span> <br />
+                        <input type="date" placeholder="29/20/2021" />
+                    </div>
+                    <div class="box">
+                        <span>ADULTS</span> <br />
+                        <input type="number" placeholder="01" />
+                    </div>
+                    <div class="box">
+                        <span>CHILDREN </span> <br />
+                        <input type="number" placeholder="01" />
+                    </div>
+                    <div class="box">
+                        <button class="flex1">
+                            <span>Check Availability</span>
+                            <i class="fas fa-arrow-circle-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1 style="font-family: 'Great Vibes', cursive; padding-bottom: 20px; text-align: center;">
+                    Welcome to <span style="color: #ff5733;">Bungalow</span><br />
+                    the haven of Your weekend
+                </h1>
+                <p>
+                    Enter a realm of storied halls, sophisticated delights, and unrivaled indulgence. Immerse yourself in the grandeur of luxury at our exquisite palaces, hotels, resorts, and safaris.
+                </p>
+                <p class="highlight">
+                    Dive into cool adventures at our picture-perfect destinations with
+                    <span class="highlight-text">Bungalows  & Restaurant.</span>
+                </p>
+                <p class="highlight">Refinement and creativity intertwine with dreamlike destinations and soulful moments on each sojourn with <span class="highlight-text">Bungalows & Restaurant.</span></p>
+                <button class="explore-btn" onclick="window.open('about.html', '_blank')">EXPLORE</button>
+            </div>
+            <div class="hero-image">
+                <img src="home-img.webp" alt="Welcome to Hotel" />
+                <div class="image-caption">Welcome to Bungalows</div>
+            </div>
+        </section>
+
+
+        <section class="services">
+            <div class="services-container">
+                <div class="service-box">
+                    <img src="pixelcut-export (1).jpg" alt="Landscape Maintenance" />
+                    <h3>  🏡✨ <br> Exclusive Clubhouse </h3>
+                    <p>Our exclusive clubhouse offers a perfect blend of luxury and comfort for your bungalow stay. Enjoy a refreshing swimming pool, indoor and outdoor games, a fully equipped gym, and a cozy lounge & café. Relax in the BBQ & bonfire area, making your weekends truly memorable with family and friends. 🌿✨</p>
+                </div>
+                <div class="service-box">
+                    <img src="pixelcut-export.jpg" alt="Seasonal Planting" />
+                    <h3>  🏡✨ <br>Luxury Bungalow Retreat</h3>
+                    <p>Escape to a luxurious bungalow surrounded by lush greenery, perfect for a relaxing getaway. Enjoy modern amenities, cozy bedrooms, a private garden, and a scenic patio. Ideal for family vacations, weekend escapes, or celebrations, our bungalows offer the perfect blend of comfort and nature for an unforgettable stay. 🌿🏡✨
+
+                    </p>
+                </div>
+                <div class="service-box">
+                    <img src="https://ambassadorplaza.in/18_Hotel_images/images/room/room1.webp" alt="Garden Design" />
+                    <h3>  🏡✨ <br>
+                        Exclusive Special Rooms</h3>
+                    <p>Experience ultimate comfort in our special rooms, designed for a luxurious and relaxing stay. Enjoy elegant interiors, plush bedding, modern amenities, and a serene ambiance. Perfect for romantic getaways, family stays, or celebrations, our rooms offer a blend of sophistication and tranquility for a memorable retreat. 🌿✨</p>
+                </div>
+            </div>
+
+            <h2 class="section-title">SERVICES</h2>
+
+            <section class="amenities">
+                <div class="container3">
+                    <div class="amenity-box curve-right">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Modern Kitchen</h3>
+                        <p>The Modern Appearance</p>
+                    </div>
+
+                    <div class="amenity-box curve-right">
+                        <i class="fas fa-bath"></i>
+                        <h3>Premium Bath Fittings</h3>
+                        <p>With Decorated Tiles</p>
+                    </div>
+
+                    <div class="amenity-box curve-right">
+                        <i class="fas fa-wifi"></i>
+                        <h3>Reliable Wi-Fi</h3>
+                        <p>For Entire Community</p>
+                    </div>
+
+                    <div class="amenity-box curve-right">
+                        <!-- <i class="fas fa-elevator"></i> -->
+                        <i class="fa-solid fa-elevator"></i>
+                        <h3>In-Built Gym</h3>
+                        <p>Comes with Personal Trainers</p>
+                    </div>
+
+                    <div class="amenity-box curve-right">
+                        <i class="fas fa-paw"></i>
+                        <h3>Pet Care Rooms</h3>
+                        <p>In Premium Plans</p>
+                    </div>
+
+                    <div class="amenity-box curve-right">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Security Measures</h3>
+                        <p>With Automated Security</p>
+                    </div>
+
+                    <div class="amenity-box curve-right">
+                        <i class="fas fa-car"></i>
+                        <h3>Separate Parking</h3>
+                        <p>For 4 Wheelers & Two Wheelers</p>
+                    </div>
+
+                    <div class="amenity-box curve-right">
+                        <i class="fas fa-swimming-pool"></i>
+                        <h3>Swimming Pools</h3>
+                        <p>With Extra Pools</p>
+                    </div>
+
+                    <!-- <div class="amenity-box curve-right">
+                        <i class="fas fa-dumbbell"></i>
+                        <h3>In-Built Gym</h3>
+                        <p>Comes with Personal Trainers</p>
+                    </div> -->
+                </div>
+            </section>
+        </section>
+
+        <!-- -------------------------------  Testimonials ------------------------------------- -->
+
+        <section class="section__container">
+            <h2>Testimonials</h2>
+            <h1>What our customers say</h1>
+            <div class="section__grid">
+                <div class="section__card">
+                    <span><i class="ri-double-quotes-l"></i></span>
+                    <div class="heading">
+                        <h4>⭐⭐⭐⭐⭐</h4>
+                    </div>
+                    <div class="client-feed">
+                        <p>
+                            💬 "An unforgettable experience! The bungalow was spacious, elegant, and surrounded by nature. Perfect weekend getaway!"                        </p>
+                    </div>
+                    <div class="client-deitails">
+                        <img src="user-1 (1).jpg" alt="user" />
+                        <h5>Allan Collins</h5>
+                        <h6>Managing Director</h6>
+                    </div>
+                </div>
+
+                <div class="section__card">
+                    <span><i class="ri-double-quotes-l"></i></span>
+                    <div class="heading">
+                        <h4> ⭐⭐⭐⭐⭐</h4>
+                    </div>
+                    <div class="client-feed">
+                        <p>
+                            Absolutely loved the ambiance and amenities. The private garden and cozy rooms made our stay so special!"                        </p>
+                    </div>
+                    <div class="client-deitails">
+                        <img src="user-2.jpg" alt="user" />
+                        <h5>Tanya Grant</h5>
+                        <h6>Ceo & Founder</h6>
+                    </div>
+                </div>
+
+                <div class="section__card">
+                    <span><i class="ri-double-quotes-l"></i></span>
+                    <div class="heading">
+                        <h4> ⭐⭐⭐⭐⭐</h4>
+                    </div>
+                    <div class="client-feed">
+                        <p>
+                            💬 "5/5 stars! Exceptional hospitality, beautiful interiors, and a peaceful location. Highly recommended!"                        </p>
+                    </div>
+                    <div class="client-deitails">
+                        <img src="user-3.jpg" alt="user" />
+                        <h5>Clay Washington</h5>
+                        <h6>Fashion Designer</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <button id="callButton" style="position: fixed ; bottom: 5%; right: 5%; padding: 20px;">
+            📞
+        </button>
+        
+        <script>
+            document.getElementById("callButton").addEventListener("click", function () {
+                window.location.href = "tel:+91 9833113472"; // Replace with the actual phone number
+            });
+        </script>
+      
+
+        <footer class="footer" style="margin-top: 0% !important;">
+            <div class="containerlast">
+                <!-- Hotel Location Section -->
+                <div>
+                    <h4>Bungalows  Location </h4>
+                    <h5 style="font-size: 15px; color:#CC8C18;">Booking and Selling Address :-</h5>
+                    <p class="address-footer" onclick="window.open('https://www.google.com/maps/place/Akshar+Business+Park/@19.0788388,73.0107879,793m/data=!3m1!1e3!4m10!1m2!2m1!1sM%2FS.+Infinity+Buildstruct+Akshar+Business+Park+Z+Wing+Office+Number+1123,+Sector+25,+Vashi,+Navi+Mumbai,+Maharashtra+400703!3m6!1s0x3be7c168b615608d:0xc4724ace45d87091!8m2!3d19.0788337!4d73.0133628!15sCntNL1MuIEluZmluaXR5IEJ1aWxkc3RydWN0IEFrc2hhciBCdXNpbmVzcyBQYXJrIFogV2luZyBPZmZpY2UgTnVtYmVyIDExMjMsIFNlY3RvciAyNSwgVmFzaGksIE5hdmkgTXVtYmFpLCBNYWhhcmFzaHRyYSA0MDA3MDMiA4gBAZIBEGNvcnBvcmF0ZV9vZmZpY2XgAQA!16s%2Fg%2F11hzjg9_5v?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D', '_blank')">M/S. Infinity Buildstruct  <br>
+    
+                        Akshar Business Park
+                        Z Wing Office Number 1123,
+                        Sector 25, Vashi, Navi Mumbai, Maharashtra 400703</p>
+                    
+    
+                    <h5 style="font-size: 15px; color:#CC8C18;">Bungalows Address :-</h5>
+                    <p  class="address-footer" onclick="window.open('https://maps.google.com/?q=19.000587,73.432442', '_blank')">PROPOSED RESIDENTIAL BUNGALOWS 
+    
+                        At Village KOTIMBE,Tal- KARJAT, Dist RAIGAD</p>
+                    
+                    
+                 
+                    
+                </div>
+    
+                <!-- More Links Section -->
+                <div>
+                    <h4>More Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Our Office</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <div class="contact-info address-footer">
+                            <i class="fas fa-envelope"></i>
+                            <p  style="margin-bottom: 0% !important;" class="contact-info address-footer">hotelambassadorplaza@gmail.com</p>
+                        </div>
+                        <div class="contact-info address-footer">
+                            <i class="fas fa-phone"></i>
+                            <p style="margin-bottom: 0% !important;" class="contact-info address-footer"> +91 9545785974</p>
+                        </div>
+                      
+                    </ul>
+                </div>
+    
+                <!-- Newsletter Section -->
+                <div>
+                    <h4>Newsletter</h4>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Enter Your Email Here" />
+                        <button>Subscribe</button>
+                    </div>
+                    <h4 style="margin-top: 10px;">Stay Connected</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-google"></i></a>
+                        <a href="#"><i class="fab fa-vimeo"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="main.js"></script>
+        <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+    </body>
+</html>
