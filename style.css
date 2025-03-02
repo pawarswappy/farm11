@@ -938,6 +938,7 @@ p {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
   width: 30%;
+  padding:10px;
 }
 
 .service-box:hover {
@@ -973,7 +974,7 @@ p {
 
   .service-box {
       width: 100%;
-    padding:20px;
+    padding:20px !important;
   }
 }
 
