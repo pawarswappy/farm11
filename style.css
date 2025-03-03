@@ -563,6 +563,8 @@ button span {
 #callButton,#whbutton{
   border-radius: 20px;
   padding: 0px;
+  margin-top:10px;
+  
 }
 #callButton>img{
 border-radius: 20px;
@@ -570,7 +572,6 @@ border-radius: 20px;
 
 #whbutton>img{
   border-radius: 20px;
-  margin-top:10px;
   }
 button i {
   margin-left: 20px;
