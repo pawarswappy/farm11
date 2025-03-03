@@ -546,6 +546,7 @@ input {
 }
 
 button {
+  margin-top:10px;
   padding: 10px 20px;
   outline: none;
   border: none;
