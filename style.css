@@ -1274,3 +1274,156 @@ p {
   color: #CC8C18;
 }
 
+
+   .center99 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            /* max-width: 900px; */
+            margin: auto;
+            padding: 40px 10%;
+        }
+
+        .row99 {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .property-card {
+            height: 18em;
+            width: 30%;
+            min-width: 280px;
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+            transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+
+        /* .property-image {
+            height: 18em;
+            width: 100%; */
+            /* background-image: url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg');
+            background-size: cover;
+            background-position: center;
+            transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); */
+        /* }  */
+        .card-image01{
+            background-image: url('https://cdn0.weddingwire.in/article/5050/3_2/1280/jpg/40505-marathibride-rohitnagwekar-lead.jpeg');
+            background-size: cover;
+            background-position: center;
+            transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+            height: 18em;
+            width: 100%;
+
+        }
+        .card-image02{
+            background-image: url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/a91dc911-a63b-48c9-ae67-b36789a6002a.__CR0,0,970,600_PT0_SX970_V1___.jpg');
+            background-size: cover;
+            background-position: center;
+            transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+            height: 18em;
+            width: 100%;
+           
+
+        }
+
+        .card-image03{
+            background-image: url('https://images.stockcake.com/public/e/2/3/e23fbf66-3412-4bd8-b1e8-a0fccae52f9d_large/joyful-birthday-celebration-stockcake.jpg');
+            background-size: cover;
+            background-position: center;
+            transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+            height: 18em;
+            width: 100%;
+           
+
+        }
+
+        .card-image04{
+            background-image: url('https://media.istockphoto.com/id/1472932742/photo/group-of-multigenerational-people-hugging-each-others-support-multiracial-and-diversity.jpg?s=612x612&w=0&k=20&c=Zm1MthU_G_LzfjBFBaMORRnuBhMsCjPQ38Ksfg4zl9g=');
+            background-size: cover;
+            background-position: center;
+            transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+            height: 18em;
+            width: 100%;
+           
+
+        }
+
+        .card-image05{
+            background-size: cover;
+            background-image: url('https://5.imimg.com/data5/TI/LQ/MY-19128035/corporate-events.jpg');
+
+            background-position: center;
+            transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+            height: 18em;
+            width: 100%;
+           
+
+        }
+
+        .card-image06{
+            background-image: url('https://wpblogassets.paytm.com/paytmblog/uploads/2024/12/new-year.jpg');
+
+            background-size: cover;
+            background-position: center;
+            transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+            height: 18em;
+            width: 100%;
+           
+
+        }
+
+
+        .property-description {
+            background-color: #FAFAFC;
+            height: 0;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0;
+            opacity: 0;
+            transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+
+        .property-card:hover .property-description {
+            height: 12em;
+            /* padding: 1em; */
+            opacity: 1;
+        }
+
+        .property-card:hover .property-image {
+            height: 6em;
+        }
+
+        h5 {
+            margin: 0;
+            font-size: 1.4em;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .property-card {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .property-card {
+                width: 100%;
+            }
+        }
