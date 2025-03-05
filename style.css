@@ -1421,6 +1421,7 @@ p {
         @media (max-width: 768px) {
             .property-card {
                 width: 45%;
+              margin-top:60px;
             }
         }
 
