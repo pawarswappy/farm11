@@ -1291,12 +1291,13 @@ p {
             justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
+          width:100%
         }
 
         .property-card {
             height: 18em;
-            width: 30%;
-            min-width: 280px;
+            width: 23%;
+/*             min-width: 280px; */
             position: relative;
             border-radius: 16px;
             overflow: hidden;
