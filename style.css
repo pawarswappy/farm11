@@ -1288,7 +1288,7 @@ p {
 
         .row99 {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             gap: 20px;
             flex-wrap: wrap;
           width:100%
@@ -1296,7 +1296,7 @@ p {
 
         .property-card {
             height: 18em;
-            width: 23%;
+            width: 32%;
 /*             min-width: 280px; */
             position: relative;
             border-radius: 16px;
