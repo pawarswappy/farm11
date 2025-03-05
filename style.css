@@ -1406,14 +1406,15 @@ p {
             height: 6em;
         }
 
-        h5 {
+        .property-description h5 {
             margin: 0;
             font-size: 1.4em;
             font-weight: 700;
         }
 
-        p {
+        .property-description p {
             font-size: 12px;
+          color:black;
         }
 
         /* Responsive Design */
