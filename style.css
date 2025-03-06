@@ -1411,7 +1411,7 @@ p {
         }
 
         .property-description h5 {
-            margin: 0;
+            margin-top: 10px;
             font-size: 1.4em;
             font-weight: 700;
         }
