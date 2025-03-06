@@ -569,6 +569,7 @@ button span {
 }
 #callButton>img{
 border-radius: 20px;
+  margin-top:10px;
 }
 
 #whbutton>img{
@@ -1416,8 +1417,9 @@ p {
         }
 
         .property-description p {
-            font-size: 12px;
+            font-size: 15px;
           color:black;
+          line-height:20px;
         }
 
         /* Responsive Design */
