@@ -564,16 +564,19 @@ button span {
 #callButton,#whbutton{
   border-radius: 20px;
   padding: 0px;
-  margin-bottom:-4px;
+/*   margin-bottom:-4px; */
   
 }
 #callButton>img{
 border-radius: 20px;
-  margin-top:10px;
+  margin-bottom:-4px;
+  
 }
 
 #whbutton>img{
   border-radius: 20px;
+  margin-bottom:-4px;
+  
   }
 button i {
   margin-left: 20px;
