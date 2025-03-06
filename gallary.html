@@ -85,7 +85,261 @@
 
 <h1 style="text-align: center;">Work In Progress</h1>
 
+<!-- Gallary Section  -->
+<section class="head">
+        <div class="container1 flex1 flex12">
+            <div class="scoial">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"> </i>
+            </div>
+            <div class="logod">
+                <img src="logo1234-removebg-preview.webp" style="height: 50px; color: aliceblue;"
+                    alt="cvbghnjmdxcfvgbhnjmk" />
+            </div>
+            <div class="address" onclick="window.open('https://maps.google.com/?q=19.000587,73.432442', '_blank')">
+                <i class="fas fa-map-marker-alt"></i>
 
+                <span>PROPOSED RESIDENTIAL BUNGALOWS , KARJAT</span>
+            </div>
+        </div>
+    </section>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar flex1">
+                <div class="sticky_logo logo">
+                    <img src="image/logo.png" alt="" />
+                </div>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="Amenities.html">Amenities</a></li>
+                    <!-- <li><a href="#room">room</a></li> -->
+                    <li><a href="#gallary"
+                            style="text-decoration: underline; text-underline-offset: 10px;  text-decoration-thickness:2px ;">gallary</a>
+                    </li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="head_contact">
+                    <!-- <i class="fas fa-phone-volume"></i> -->
+                    <!-- <span>+91 9833113472</span> -->
+                    <img src="logo1234-removebg-preview.webp" alt="" />
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobliemmenu);
+
+        function mobliemmenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+
+    <h1 style="text-align: center; background-color: #f0f9e0; margin-bottom: 0; line-height: 1.5;">
+        Our <strong style="color: green;">Green</strong> Forest Area 🌿🌳</h1>
+
+
+    <div class="spa-section">
+
+        <div class="text-content ">
+            <!-- <h4 style="color: #c79a6e; font-weight: bold; padding: 10px;">Your Events Are to Preisceus for Us</h4> -->
+            <h2><strong>Biodiversity and Wildlife </strong> ✨</h2>
+            <p style=" text-align: justify; color: black; ">Nestled in the heart of nature, our Green
+                Forest Area is a haven of tranquility and biodiversity. With lush greenery, towering trees, and vibrant
+                wildlife, it offers a refreshing escape from urban life. The forest supports a rich ecosystem, providing
+                shelter to countless species of birds, animals, and plants. Whether you seek adventure through hiking
+                trails or peaceful relaxation amidst nature’s beauty, this forest is the perfect destination. We are
+                committed to preserving its natural balance through sustainable practices and conservation efforts.
+                Experience the serenity, breathe in the fresh air, and reconnect with nature in our Green Forest Area.
+            </p>
+            <button class="btn btn-custom">Read More</button>
+        </div>
+
+        <div class="carousel-container" >
+            <div id="spaCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="green-forest.webp" alt="Spa Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="green-forest1 (1).webp" alt="Spa Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="green-forest2.webp" alt="Spa Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="green-forest3.webp" alt="Spa Image 3">
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#spaCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#spaCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- bedroom images section -->
+    <section class="gallary-data">
+        <div class="room-images">
+            <div class="gallary-room">
+                <img src="green-forest2.webp" alt="">
+                <h4>Modern BedRoom</h4>
+                <p>Rich variety of plants, animals, and bird species
+                    Importance of maintaining ecological balance
+                    Environmental Benefits 🌍💨
+                    </p>
+            </div>
+        </div>
+        <div class="room-images">
+            <div class="gallary-room">
+                <img src="green-forest1.webp" alt="">
+                <h4>Modern BedRoom</h4>
+                <p>Role in improving air quality and reducing pollution
+                    Contribution to climate regulation and carbon absorption
+                    Recreational Activities 🚶‍♂🏕
+                    </p>
+            </div>
+        </div>
+        <div class="room-images">
+            <div class="gallary-room ">
+                <img src="green-forest3.webp" alt="">
+                <h4>Modern BedRoom</h4>
+                <p>Unique tree species, medicinal plants, and rare animals
+                    Seasonal changes and how they affect the ecosystem
+                    Community and Awareness 🏡📢 
+                    </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="gallary-data">
+        <div class="room-images">
+            <div class="gallary-room">
+                <img src="room6.webp" alt="">
+                <h4>Modern BedRoom</h4>
+                <p>Your Comfort Zone</p>
+            </div>
+        </div>
+        <div class="room-images">
+            <div class="gallary-room">
+                <img src="room8.webp" alt="">
+                <h4>Modern BedRoom</h4>
+                <p>Your Comfort Zone</p>
+            </div>
+        </div>
+        <div class="room-images">
+            <div class="gallary-room">
+                <img src="room7.webp" alt="">
+                <h4>Modern BedRoom</h4>
+                <p>Your Comfort Zone</p>
+            </div>
+        </div>
+    </section> -->
+
+
+    <button id="whbutton" onclick="window.open('https://wa.me/919876543210', '_blank')"
+        style="position: fixed ; bottom: 5%; left: 5%; ">
+        <img src="whatsapp.webp" alt="error">
+    </button>
+
+    <button id="callButton" style="position: fixed ; bottom: 5%; right: 5%; ">
+        <img src="phone.webp" alt="error">
+    </button>
+
+    <script>
+        document.getElementById("callButton").addEventListener("click", function () {
+            window.location.href = "tel:+91 9833113472"; // Replace with the actual phone number
+        });
+
+        document.getElementById("whbutton").addEventListener("click", function () {
+            window.location.href = "'https://wa.me/919876543210', '_blank'"; // Replace with the actual phone number
+        });
+    </script>
+
+
+
+
+    <footer class="footer" style="margin-top: 3% !important;">
+        <div class="containerlast">
+            <!-- Hotel Location Section -->
+            <div>
+                <h4>Bungalows Location </h4>
+                <h5 style="font-size: 15px; color:#CC8C18;">Booking and Selling Address :-</h5>
+                <p>M/S. Infinity Buildstruct <br>
+                    Akshar Business Park
+                    Z Wing Office Number 1123,
+                    Sector 25, Vashi, Navi Mumbai, Maharashtra 400703</p>
+
+                <h5 style="font-size: 15px; color:#CC8C18;">Bungalows Address :-</h5>
+                <p>PROPOSED RESIDENTIAL BUNGALOWS
+                    At Village KOTIMBE,Tal- KARJAT, Dist RAIGAD</p>
+            </div>
+
+            <!-- More Links Section -->
+            <div>
+                <h4>More Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Our Office</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <p style="margin-bottom: 0% !important;">hotelambassadorplaza@gmail.com</p>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i>
+                        <p style="margin-bottom: 0% !important;"> +91 9545785974</p>
+                    </div>
+
+                </ul>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div>
+                <h4>Newsletter</h4>
+                <div class="newsletter">
+                    <input type="email" placeholder="Enter Your Email Here" />
+                    <button>Subscribe</button>
+                </div>
+                <h4 style="margin-top: 10px;">Stay Connected</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="#"><i class="fab fa-vimeo"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <button  id="whbutton" onclick="window.open('https://wa.me/919876543210', '_blank')"
          style="position: fixed ; bottom: 5%; left: 5%; ">
