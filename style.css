@@ -1242,7 +1242,131 @@ p {
 /* ////////////// */
 
 
+/* slider */
 
+    .slider {
+        width: 500px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .slides {
+        display: flex;
+        width: 300%;
+        /* Adjust based on number of slides */
+        animation: slide 6s infinite alternate ease-in-out;
+    }
+
+    .slides>img {
+        width: 500px;
+        height: 350px;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        25% {
+            transform: translateX(-300px);
+        }
+
+        50% {
+            transform: translateX(-500px);
+        }
+
+        100% {
+            transform: translateX(-1000px);
+        }
+    }
+
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+    /* carousal  images */
+    /* ///////////////////////////////////////////// */
+    .carousel-container-images {
+        padding: 30px 10px;
+    }
+
+    .carousel-item {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .carousel-item>img {
+        height: 400px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
+        color: white;
+        padding: 15px;
+        text-align: center;
+        display: none;
+    }
+
+    .carousel-item.active .carousel-caption {
+        display: block;
+    }
+
+    @media (max-width: 768px) {
+        .carousel-item>img {
+            height: 300px;
+        }
+
+        .carousel-caption {
+            padding: 10px;
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .carousel-item>img {
+            height: 250px;
+        }
+
+        .carousel-caption>h2 {
+            font-size: 16px;
+        }
+
+        .carousel-caption>p {
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 425px) {
+        .container-caption>h2 {
+            font-size: 12px;
+            margin-top: 100px;
+        }
+    }
+
+/*//////////////  */
 
 
 
