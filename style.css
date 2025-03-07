@@ -12,7 +12,6 @@
 html,
 body {
   font-family: 'Poppins', sans-serif;
-  
   scroll-behavior: smooth;
   overflow-x: hidden;
 
@@ -688,45 +687,6 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .section__container {
   max-width: 1200px;
   margin: auto;
@@ -808,9 +768,6 @@ p {
         grid-template-row: repeat(3, 1fr);
         gap: 2rem;
       }
-
-
-
 
 }
 
@@ -910,17 +867,6 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* Section Title */
 .section-title {
   text-align: center;
@@ -1006,16 +952,6 @@ p {
     padding:20px !important;
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1148,11 +1084,11 @@ p {
         text-transform: uppercase;
     }
 
-    .carousel-item>img {
+/*     .carousel-item>img {
         width: 550px;
         height: 360px;
     }
-
+ */
     /* Responsive Design */
     @media (max-width: 900px) {
         .spa-section {
@@ -1162,9 +1098,9 @@ p {
         .text-content{
             max-width: 100%;
         }
-        .carousel-container{
+/*         .carousel-container{
             max-width: 100%;
-        }
+        } */
     }
 
     @media (max-width: 600px) {
@@ -1176,13 +1112,13 @@ p {
         .text-content{
             max-width: 100%;
         }
-        .carousel-container{
+/*         .carousel-container{
             max-width: 100%;
         }
         .carousel-container>img{
             max-width: 100%;
             height: 200px;
-        }
+        } */
     }
 
     /* Gallary Section */
@@ -1320,7 +1256,6 @@ p {
 
     .carousel-caption {
         position: absolute;
-      right:15%;
         bottom: 0;
         left: 0;
         width: 100%;
