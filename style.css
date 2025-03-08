@@ -543,51 +543,40 @@ input {
   border: none;
   outline: none;
 }
+ button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        outline: none;
+        border: none;
+        border-radius: 30px;
+        background: transparent;
+    }
 
-button {
-  margin-top:10px;
-  padding: 10px 20px;
-  outline: none;
-  border: none;
-  border-radius: 30px;
-}
+    #callButton, #whbutton {
+        border-radius: 20px;
+        padding: 0px;
+        animation: jump 1.5s infinite ease-in-out;
+    }
 
-button i {
-  margin-left: 20px;
-  font-size: 25px;
-}
+    /* Staggering animation effect */
+    #callButton {
+        animation-delay: 0.5s;
+    }
 
-button span {
-  margin-top: 5px;
-}
-#callButton,#whbutton{
-  border-radius: 20px;
-  padding: 0px;
-/*   margin-bottom:-4px; */
-  
-}
-#callButton>img{
-border-radius: 20px;
-  margin-bottom:-4px;
-  
-}
+    @keyframes jump {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
 
-#whbutton>img{
-  border-radius: 20px;
-  margin-bottom:-4px;
-  
-  }
-button i {
-  margin-left: 20px;
-  font-size: 25px;
-}
-
-button span {
-  margin-top: 5px;
-}
-.explore-btn{
-color: #fff;
-}
+    #callButton > img,
+    #whbutton > img {
+        border-radius: 20px;
+        margin-bottom: -4px;
+    }
 /*------------home------------*/
 /*------------about------------*/
 .top {
