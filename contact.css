@@ -282,7 +282,7 @@ input, select {
   background: white;
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 10px;
+/*   padding: 10px; */
 }
 
 .phone-input span {
