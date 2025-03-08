@@ -105,6 +105,82 @@ body {
     color: aliceblue;
 }
 
+
+.about-image-container {
+    position: relative;
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+
+.about-image-container {
+    position: relative;
+    width: 100%;
+    /* height: 280px; */
+}
+
+.about-image-container img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(50%);
+    /* Darkens the image */
+}
+
+
+.breadcrumb {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.breadcrumb a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: none;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text h1 {
+    text-decoration: underline 3px #ff4500;
+    text-underline-offset: 15px;
+}
+
+.text p {
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+}
+
+.text p a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.text p a:hover {
+    text-decoration: underline 2px white
+}
+
+
+
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column;
