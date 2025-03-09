@@ -70,3 +70,78 @@
 .text p a:hover {
     text-decoration: underline 2px white
 }
+
+/* slider section start */
+
+.gallary-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 30px;
+        background-color: #f0f9e0;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .text-content {
+        max-width: 45%;
+        transition: transform 0.3s ease-in-out;
+        align-items: center;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .slider {
+        max-width: 50%;
+    }
+
+    .btn-custom {
+        background-color: #8c6239;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-transform: uppercase;
+    }
+
+    .slides>img {
+        width: 550px;
+        height: 360px;
+    }
+
+    /* slider Responsive Design */
+    @media (max-width: 900px) {
+        .gallary-section {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .text-content {
+            max-width: 100%;
+        }
+
+        .slider {
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .gallary-section {
+            flex-direction: column;
+            width: 100%;
+
+        }
+
+        .text-content {
+            max-width: 100%;
+        }
+
+        .slider {
+            max-width: 100%;
+        }
+
+        .slides>img {
+            max-width: 100%;
+            height: 200px;
+        }
+    }
+/* slider end */
