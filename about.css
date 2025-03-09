@@ -30,6 +30,8 @@ body {
 }
 .img-container>img{
     height: 300px;
+        max-width: 200px;
+    min-width: 300px;
 }
 
 
