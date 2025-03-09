@@ -29,7 +29,7 @@ body {
 
 }
 .img-container img{
-    height: 320px;
+    height: 300px;
 }
 
 
@@ -61,6 +61,8 @@ body {
     margin-bottom: 15px;
     line-height: 1.6;
     text-align: justify;
+    overflow:scroll;
+        scrollbar-width: none;
 }
 
 .highlight {
