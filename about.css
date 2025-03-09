@@ -19,13 +19,13 @@ body {
 
 .image-container {
     position: relative;
-    width: 50%;
+   
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 3px solid #C88F65;
-    padding: 40px 8%;
+    padding: 20px 5%;
 
 }
 .img-container img{
