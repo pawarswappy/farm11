@@ -63,6 +63,7 @@ body {
     text-align: justify;
     overflow:scroll;
         scrollbar-width: none;
+    height:200px;
 }
 
 .highlight {
