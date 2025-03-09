@@ -312,6 +312,9 @@ body {
     text-align: justify;
     margin-left: 5%;
     margin-right: 5%;
+        overflow: scroll;
+    scrollbar-width: none;
+    height:100px
 }
 
 .btn-read {
