@@ -342,7 +342,7 @@
         }
         .carousel-wrapper {
             flex: 1;
-            min-width: 100%;
-            max-width: 100%;
+            min-width: 300px;
+            max-width: 400px;
         }
 /* carousal section end  */
