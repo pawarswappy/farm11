@@ -766,12 +766,6 @@ p {
     justify-content: center;
 }
 
-h1 {
-    text-align: center;
-    font-size: 40px;
-    margin: 20px 0;
-    margin-bottom: 50px;
-}
 
 .center {
     display: flex;
