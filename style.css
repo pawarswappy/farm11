@@ -1362,3 +1362,111 @@ p {
             }
         }
  
+/* future infrasturure  */
+
+.container32 {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    padding: 50px 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px 10%;
+}
+
+.box {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.3s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid rgb(241, 198, 7);
+    border-top: 6px solid rgb(237, 184, 61);
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    cursor: pointer;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.content32 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content32 img {
+    width: 100%;
+    height: 250px;
+}
+
+.hover {
+    transform: scale(0);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    /* border-radius: 25px; */
+    top: 0;
+    left: 0;
+}
+
+.hover h1,
+.hover p {
+    color: #ffffff;
+    text-align: center;
+}
+
+.hover h1 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.hover p {
+    font-size: 0.9rem;
+    padding: 0 10px;
+}
+
+.box:hover .hover {
+    transform: scale(1);
+}
+
+@media (max-width: 768px) {
+    .center {
+        justify-content: space-between;
+    }
+    .box {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .center {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        width: 100%;
+    }
+}
