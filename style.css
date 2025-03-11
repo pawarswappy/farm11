@@ -1380,7 +1380,6 @@ p {
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 20px;
-    padding: 20px 10%;
 }
 
 .box {
