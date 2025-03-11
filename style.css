@@ -188,6 +188,7 @@ header.sticky .nav-menu {
   background: #001b41;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  color:#fff;
 }
 
 .explore-btn:hover {
