@@ -93,12 +93,8 @@ header {
 
 .container h1{
   font-size: 6rem !important;
-/*   margin-top: 100px; */
-  padding:5%;
+  margin-top: 100px;
 }
-  .home h1{
-   font-size: 4rem !important; 
-  }
 .services-container{
   padding-bottom: 10px;
 }
