@@ -96,6 +96,9 @@ header {
 /*   margin-top: 100px; */
   padding:5%;
 }
+  .home h1{
+   font-size: 4rem !important; 
+  }
 .services-container{
   padding-bottom: 10px;
 }
