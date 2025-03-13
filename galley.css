@@ -77,7 +77,7 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding: 30px;
+        padding: 50px 10%;
         background-color: #f0f9e0;
         width: 100%;
         gap: 10px;
@@ -240,6 +240,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 20px;
+        padding:30px;
     }
 
     .gallary-room:hover {
@@ -297,6 +298,7 @@
         height: 400px;
         object-fit: cover;
         width: 100%;
+        
     }
 
     .carousel-caption {
