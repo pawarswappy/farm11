@@ -240,7 +240,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 20px;
-        padding:30px;
+/*         padding:30px; */
     }
 
     .gallary-room:hover {
