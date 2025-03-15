@@ -1,4 +1,4 @@
-.about-image-container {
+/* .about-image-container {
     position: relative;
     width: 100%;
   
@@ -7,23 +7,23 @@
     justify-content: center;
     text-align: center;
     color: white;
-}
+} */
 
 
-.about-image-container {
+/* .about-image-container {
     position: relative;
     width: 100%;
     /* height: 280px; */
-}
+} */
 
-.about-image-container img {
+/* .about-image-container img {
     width: 100%;
     height: 400px;
     object-fit: cover;
     filter: brightness(50%);
     /* Darkens the image */
-}
-
+} */
+/* 
 
 .breadcrumb {
     text-align: left;
@@ -69,7 +69,7 @@
 
 .text p a:hover {
     text-decoration: underline 2px white
-}
+} */
 
 /* slider section start */
 
