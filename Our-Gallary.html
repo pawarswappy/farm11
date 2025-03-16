@@ -302,7 +302,13 @@
             dots[slideIndex].classList.add("active");
         }
 
+         function autoSlide() {
+            moveSlide(1);
+            setTimeout(autoSlide, 3000);
+        }
+
         updateSlider();
+        setTimeout(autoSlide, 3000);
     </script>
 
 
