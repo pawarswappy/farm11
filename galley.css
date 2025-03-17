@@ -129,7 +129,7 @@
         display: flex;
         width: 300%;
         /* Adjust based on number of slides */
-        animation: slide 6s infinite alternate ease-in-out;
+        animation: slide 25s infinite alternate ease-in-out;
     }
 
     .slides>img {
