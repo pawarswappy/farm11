@@ -94,7 +94,7 @@ body {
     display: inline-block;
     padding: 10px 20px;
     color: aliceblue;
-    background-color: #C88F65;
+    background-color: #3E2723;
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
@@ -289,7 +289,7 @@ body {
     font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #C88F65;
+    color: #3E2723;
     margin: 10px 0%;
 }
 
@@ -320,7 +320,7 @@ body {
 .btn-read {
     display: inline-block;
     padding: 15px 25px;
-    background: #8B5E3B;
+    background: #3E2723;
     color: white;
     text-decoration: none;
     font-size: 18px;
