@@ -14,7 +14,7 @@
           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
 
@@ -137,85 +137,80 @@
 <!--  gallary section start -->
 
 
-    <section class="gallary-data">
-    <div class="room-images">
-        <div class="gallary-room">
-            <img src="pixelcut-export (1).jpg" alt="gallary" onclick="openPopup(1)"> 
+ <div class="main-slider">
+        <img src="pixelcut-export.png" alt="Image 1" onclick="openPopup(1)">
+        <img src="pixelcut-export (1).jpg" alt="Image 2" onclick="openPopup(2)">
+        <img src="pixelcut-export (1).jpg" alt="Image 3" onclick="openPopup(3)">
+    </div>
+
+    <div class="popup-slider-container" id="popup-slider">
+        <div class="popup-slider-content">
+            <span class="close-popup-btn" onclick="closePopup()">&times;</span>
+            <div class="inner-carousel" id="inner-carousel"></div>
         </div>
     </div>
 
-    <div class="room-images">
-        <div class="gallary-room">
-            <img src="pixelcut-export.jpg" alt="gallary" onclick="openPopup(2)" >
-        </div>
-    </div>
-
-    <div class="room-images">
-        <div class="gallary-room ">
-            <img src="pixelcut-export.jpg" alt="gallary" onclick="openPopup(3)">
-        </div>
-    </div>
-</section>
-
-
-<div class="popup-slider" id="popup">
-    <div class="popup-content">
-        <span class="close-btn" onclick="closePopup()">&times;</span>
-        <div class="inner-slider" id="inner-slider"></div>
-    </div>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-
-<script>
-    $(document).ready(function(){
-        $('.gallary-data').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.main-slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
         });
-    });
 
-    const carousels = {
-        1: ["pool1.webp", "pool3.webp", "resto.webp"],
-        2: ["hull1.webp", "pool3.webp", "hull2.webp"],
-        3: ["plot1.webp", "cricketturf.webp", "pixelcut-export.jpg"]
-    };
+        const carousels = {
+            1: ["pixelcut-export.png", "image5.jpg", "image6.jpg"],
+            2: ["image7.jpg", "image8.jpg", "image9.jpg"],
+            3: ["image10.jpg", "image11.jpg", "image12.jpg"]
+        };
 
-    function openPopup(index) {
-        document.getElementById('popup').style.display = 'flex';
-        let sliderContainer = $('#inner-slider');
-        sliderContainer.html('');
-        carousels[index].forEach(img => {
-            sliderContainer.append(`<img src="${img}" alt="Carousel Image">`);
-        });
-        
-        if (sliderContainer.hasClass('slick-initialized')) {
-            sliderContainer.slick('unslick');
+        function openPopup(index) {
+            document.getElementById('popup-slider').style.display = 'flex';
+            let sliderContainer = $('#inner-carousel');
+            sliderContainer.html('');
+            carousels[index].forEach(img => {
+                sliderContainer.append(`<img src="${img}" alt="Carousel Image">`);
+            });
+            
+            if (sliderContainer.hasClass('slick-initialized')) {
+                sliderContainer.slick('unslick');
+            }
+            
+            sliderContainer.slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                infinite: true,
+                dots: true,
+                arrows: true
+            });
         }
         
-        sliderContainer.slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            infinite: true,
-            dots: true,
-            arrows: true
-        });
-    }
+        function closePopup() {
+            document.getElementById('popup-slider').style.display = 'none';
+            $('#inner-carousel').slick('unslick');
+        }
+    </script>
     
-    function closePopup() {
-        document.getElementById('popup').style.display = 'none';
-        $('#inner-slider').slick('unslick');
-    }
-</script>
 
 
 <!--  gallary section end    -->
 
+
+    
 <!--     carousal section start  -->
 
  <div class="container-topper" style="padding: 50px 10%;">
