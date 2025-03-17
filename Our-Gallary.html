@@ -254,11 +254,18 @@
                     </button>
                 </div>
             </div>
-
-
             
         </div>
     </div>
+    <!-- carousal script section end -->
+<script>
+        function showContent(element) {
+            let captions = document.querySelectorAll('.carousel-caption');
+            captions.forEach(caption => caption.style.display = 'none');
+            element.querySelector('.carousel-caption').style.display = 'block';
+        }
+    </script>
+<!--     script end -->
 
     
  <div class="container-topper" style="padding: 50px 10%;">
@@ -311,15 +318,7 @@
 
 
     
-<!-- carousal script section end -->
-<script>
-        function showContent(element) {
-            let captions = document.querySelectorAll('.carousel-caption-content');
-            captions.forEach(caption => caption.style.display = 'none');
-            element.querySelector('.carousel-caption-content').style.display = 'block';
-        }
-    </script>
-<!--     script end -->
+
 
 
 
