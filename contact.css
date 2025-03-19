@@ -301,6 +301,7 @@ button {
 
 button:hover {
   background: #003366;
+  color:#fff;
 }
 
 @media (max-width: 768px) {
