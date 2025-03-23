@@ -14,7 +14,48 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
         <!-- <link rel="stylesheet" href="demo.css"> -->
     </head>
+<style>
+     .carousel-container {
+        position: relative;
+        width: 300px;
+        overflow: hidden;
+        background: white;
+        padding: 15px;
+        border-radius: 12px;
+    }
 
+
+    .carousel-slide {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-slide img {
+        min-width: 100%;
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 1px 5px;
+        cursor: pointer;
+    }
+
+    .prev {
+        left: 5px;
+    }
+
+    .next {
+        right: 5px;
+    }
+</style>
     <body>
         <section class="head">
             <div class="container1 flex1 flex12">
@@ -144,17 +185,44 @@
         <section class="services">
             <div class="services-container">
                 <div class="service-box">
-                    <img src="pixelcut-export (1).jpg" alt="LandscapeMaintenance" />
+                    <div class="carousel-container">
+                        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                        <div class="carousel-slide">
+                            <img src="people-boat-lake-with-trees.jpg" alt="Clubhouse Image">
+                            <img src="pixelcut-export.jpg" alt="Clubhouse Image 2">
+                            <img src="pixelcut-export (1).jpg" alt="Clubhouse Image 3">
+                        </div>
+                        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                    </div>
+<!--                     <img src="pixelcut-export (1).jpg" alt="LandscapeMaintenance" /> -->
                     <h3>  🏡✨ <br> Exclusive Clubhouse </h3>
                     <p>Our exclusive clubhouse offers a perfect blend of luxury and comfort for your bungalow stay. Enjoy a refreshing swimming pool, indoor and outdoor games, a fully equipped gym, and a cozy lounge & café. Relax in the BBQ & bonfire area, making your weekends truly memorable with family and friends. 🌿✨</p>
                 </div>
                 <div class="service-box">
-                    <img src="pixelcut-export.jpg" alt="SeasonalPlanting" />
+                    <div class="carousel-container">
+                        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                        <div class="carousel-slide">
+                            <img src="pixelcut-export.jpg" alt="Clubhouse Image">
+                            <img src="pixelcut-export.jpg" alt="Clubhouse Image 2">
+                            <img src="pixelcut-export (1).jpg" alt="Clubhouse Image 3">
+                        </div>
+                        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                    </div>
+<!--                     <img src="pixelcut-export.jpg" alt="SeasonalPlanting" /> -->
                     <h3>  🏡✨ <br>Luxury Bungalow Retreat</h3>
                     <p>Escape to a luxurious bungalow surrounded by lush greenery, perfect for a relaxing getaway. Enjoy modern amenities, cozy bedrooms, a private garden, and a scenic patio. Ideal for family vacations, weekend escapes, or celebrations, our bungalows offer the perfect blend of comfort and nature for an unforgettable stay. 🌿🏡✨ </p>
                 </div>
                 <div class="service-box">
-                    <img src="veg-rest3.webp" alt="GardenDesign" />
+                    <div class="carousel-container">
+                        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                        <div class="carousel-slide">
+                            <img src="veg-rest3.webp" alt="Clubhouse Image">
+                            <img src="pixelcut-export.jpg" alt="Clubhouse Image 2">
+                            <img src="pixelcut-export (1).jpg" alt="Clubhouse Image 3">
+                        </div>
+                        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                    </div>
+<!--                     <img src="veg-rest3.webp" alt="GardenDesign" /> -->
                     <h3>  🏡✨ <br> Veg Restaurant</h3>
                     <p> A vegetarian restaurant serves delicious meals made entirely from plant-based ingredients, without any meat, poultry, or seafood. Some places also avoid eggs and dairy, depending on their style of vegetarian cooking. These restaurants focus on fresh vegetables, grains, lentils, tofu, paneer, and other healthy plant-based proteins. 🌿✨</p>
                     
@@ -162,14 +230,21 @@
             </div>
 
 
+             <script>
+            let slideIndex = 0;
+            const slides = document.querySelector('.carousel-slide');
+            const totalSlides = slides.children.length;
+            
+            function moveSlide(n) {
+                slideIndex = (slideIndex + n + totalSlides) % totalSlides;
+                slides.style.transform = `translateX(${-slideIndex * 100}%)`;
+            }
+        </script>
+
 
 
             <h2 class="section-title">Host Your Special Events at Our Bungalows</h2>
-
-
-
-
-
+            
             <div class="center99">
         <div class="row99">
             <div class="property-card">
