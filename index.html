@@ -15,47 +15,41 @@
         <!-- <link rel="stylesheet" href="demo.css"> -->
     </head>
 <style>
-.carousel-container {
-        position: relative;
-        width: 100%;
-        max-width: 1200px;
-        overflow: hidden;
-        background: white;
-        padding: 15px;
-        border-radius: 12px;
-    }
 
-    .carousel-slide {
-        display: flex;
-        gap: 20px;
-        transition: transform 0.5s ease-in-out;
-    }
+@keyframes fade{
+  from{
+    opacity:0.4;
+  }
+  to{
+    opacity:1;
+  }
+}
 
-    .carousel-slide img {
-        min-width: 100%;
-        border-radius: 8px;
-    }
 
-    .prev,
-    .next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: rgba(0, 0, 0, 0.5);
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-    }
+#slider{
+  margin:10px 8px;
+  width:95%;
+  overflow:hidden;
+}
 
-    .prev {
-        left: 5px;
-    }
+.slides{
+  overflow:hidden;
+  animation-name:fade;
+  animation-duration:1s;
+  display:none;
+}
 
-    .next {
-        right: 5px;
-    }
-   
+img{
+  width:100%;
+}
+
+@media (max-width:567px){
+  #slider{
+    width:100%;
+
+  }
+}
+
 </style>
     <body>
         <section class="head">
@@ -186,44 +180,53 @@
         <section class="services">
             <div class="services-container">
                 <div class="service-box">
-                    <div class="carousel-container">
-                        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-                        <div class="carousel-slide">
-                            <img src="pixelcut-export (1).jpg"" alt="Clubhouse Image">
-                            <img src="pixelcut-export.jpg" alt="Clubhouse Image 2">
-                            <img src="pixelcut-export (1).jpg" alt="Clubhouse Image 3">
-                        </div>
-                        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                    <div id="slider">
+                    <div class="slides">
+                        <img src="pixelcut-export (1).jpg" width="100%" />
                     </div>
-<!--                     <img src="pixelcut-export (1).jpg" alt="LandscapeMaintenance" /> -->
+
+                    <div class="slides">
+                        <img src="pixelcut-export.jpg" width="100%" />
+                    </div>
+
+                    <div class="slides">
+                        <img src="pixelcut-export.png" width="100%" />
+                    </div>
+                </div>
                     <h3>  🏡✨ <br> Exclusive Clubhouse </h3>
                     <p>Our exclusive clubhouse offers a perfect blend of luxury and comfort for your bungalow stay. Enjoy a refreshing swimming pool, indoor and outdoor games, a fully equipped gym, and a cozy lounge & café. Relax in the BBQ & bonfire area, making your weekends truly memorable with family and friends. 🌿✨</p>
                 </div>
                 <div class="service-box">
-                    <div class="carousel-container">
-                        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-                        <div class="carousel-slide">
-                            <img src="pixelcut-export.jpg" alt="Clubhouse Image">
-                            <img src="pixelcut-export.jpg" alt="Clubhouse Image 2">
-                            <img src="pixelcut-export (1).jpg" alt="Clubhouse Image 3">
-                        </div>
-                        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                <div id="slider">
+                    <div class="slides">
+                        <img src="pixelcut-export.jpg" width="100%" />
                     </div>
-<!--                     <img src="pixelcut-export.jpg" alt="SeasonalPlanting" /> -->
+
+                    <div class="slides">
+                        <img src="pixelcut-export.jpg" width="100%" />
+                    </div>
+
+                    <div class="slides">
+                        <img src="pixelcut-export.png" width="100%" />
+                    </div>
+                </div>
                     <h3>  🏡✨ <br>Luxury Bungalow Retreat</h3>
                     <p>Escape to a luxurious bungalow surrounded by lush greenery, perfect for a relaxing getaway. Enjoy modern amenities, cozy bedrooms, a private garden, and a scenic patio. Ideal for family vacations, weekend escapes, or celebrations, our bungalows offer the perfect blend of comfort and nature for an unforgettable stay. 🌿🏡✨ </p>
                 </div>
                 <div class="service-box">
-                    <div class="carousel-container">
-                        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-                        <div class="carousel-slide">
-                            <img src="veg-rest3.webp" alt="Clubhouse Image">
-                            <img src="pixelcut-export.jpg" alt="Clubhouse Image 2">
-                            <img src="pixelcut-export (1).jpg" alt="Clubhouse Image 3">
-                        </div>
-                        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                 <div id="slider">
+                    <div class="slides">
+                        <img src="veg.rest3.webp" width="100%" />
                     </div>
-<!--                     <img src="veg-rest3.webp" alt="GardenDesign" /> -->
+
+                    <div class="slides">
+                        <img src="pixelcut-export.jpg" width="100%" />
+                    </div>
+
+                    <div class="slides">
+                        <img src="pixelcut-export.png" width="100%" />
+                    </div>
+                </div>
                     <h3>  🏡✨ <br> Veg Restaurant</h3>
                     <p> A vegetarian restaurant serves delicious meals made entirely from plant-based ingredients, without any meat, poultry, or seafood. Some places also avoid eggs and dairy, depending on their style of vegetarian cooking. These restaurants focus on fresh vegetables, grains, lentils, tofu, paneer, and other healthy plant-based proteins. 🌿✨</p>
                     
@@ -231,24 +234,38 @@
             </div>
 
 
-         
-    <script>
-        let slideIndex = 0;
-        const slides = document.querySelector('.carousel-slide');
-        const totalSlides = slides.children.length;
-        
-        function moveSlide(n) {
-            slideIndex = (slideIndex + n + totalSlides) % totalSlides;
-            slides.style.transform = `translateX(${-slideIndex * 100}%)`;
-        }
+<script>
+            var index = 0;
+            var slides = document.querySelectorAll(".slides");
+            var dot = document.querySelectorAll(".dot");
 
-        function autoSlide() {
-            moveSlide(1);
-            setTimeout(autoSlide, 2000);
-        }
-        
-        setTimeout(autoSlide, 2000);
-    </script>
+            function changeSlide() {
+
+                if (index < 0) {
+                    index = slides.length - 1;
+                }
+
+                if (index > slides.length - 1) {
+                    index = 0;
+                }
+
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                    dot[i].classList.remove("active");
+                }
+
+                slides[index].style.display = "block";
+                dot[index].classList.add("active");
+
+                index++;
+
+                setTimeout(changeSlide, 2000);
+
+            }
+
+            changeSlide();
+        </script>
+
 
 
 
