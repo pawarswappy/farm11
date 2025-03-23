@@ -68,12 +68,110 @@
     color: #CC8C18;
 }
 
+
+
+         .image-container {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        
+        /* Plan Image */
+        .plan-image {
+            width: 100%;
+            transition: transform 0.3s;
+        }
+
+        .image-container:hover .plan-image {
+            transform: scale(1.05);
+            filter: brightness(0.6); /* Darken the image */
+        }
+
+        /* Text Overlay */
+        .hover-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .image-container:hover .hover-text {
+            opacity: 1;
+        }
+
+        /* Modal */
+        .modal-dialog {
+            max-width: 90%;
+        }
+
+        .modal-content img {
+            width: 100%;
+        }
         
     </style>
-    </style>
+   
 </head>
 
 <body>
+
+
+
+    <div class="container my-5">
+    <div class="row align-items-center">
+        <!-- Left Side: Image with Hover Text -->
+        <div class="col-md-6 text-center">
+            <div class="image-container" data-bs-toggle="modal" data-bs-target="#imageModal">
+                <img src="Divine by Infinity Group Karjat _page-0001.jpg" alt="Our Plan" class="img-fluid plan-image">
+                <div class="hover-text">View Full Image</div>
+            </div>
+        </div>
+
+        <!-- Right Side: Slider -->
+        <div class="col-md-6">
+            <div id="planSlider" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://img.freepik.com/free-photo/beautiful-domestic-cat-laying-fence_181624-43207.jpg?uid=P13047151&ga=GA1.1.1675265925.1738925483&semt=ais_hybrid" class="d-block w-100" alt="Plan 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://img.freepik.com/free-photo/beautiful-domestic-cat-laying-fence_181624-43207.jpg?uid=P13047151&ga=GA1.1.1675265925.1738925483&semt=ais_hybrid" class="d-block w-100" alt="Plan 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://img.freepik.com/free-photo/beautiful-domestic-cat-laying-fence_181624-43207.jpg?uid=P13047151&ga=GA1.1.1675265925.1738925483&semt=ais_hybrid" class="d-block w-100" alt="Plan 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#planSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#planSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Full-Screen Image Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <img src="Divine by Infinity Group Karjat _page-0001.jpg" alt="Full-Screen Plan" class="w-100">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
 
 
     <section class="head">
