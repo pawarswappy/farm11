@@ -230,16 +230,24 @@
             </div>
 
 
-             <script>
-            let slideIndex = 0;
-            const slides = document.querySelector('.carousel-slide');
-            const totalSlides = slides.children.length;
-            
-            function moveSlide(n) {
-                slideIndex = (slideIndex + n + totalSlides) % totalSlides;
-                slides.style.transform = `translateX(${-slideIndex * 100}%)`;
-            }
-        </script>
+         
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelector('.carousel-slide');
+        const totalSlides = slides.children.length;
+        
+        function moveSlide(n) {
+            slideIndex = (slideIndex + n + totalSlides) % totalSlides;
+            slides.style.transform = `translateX(${-slideIndex * 100}%)`;
+        }
+
+        function autoSlide() {
+            moveSlide(1);
+            setTimeout(autoSlide, 2000);
+        }
+        
+        setTimeout(autoSlide, 2000);
+    </script>
 
 
 
