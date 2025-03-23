@@ -391,7 +391,7 @@
 
         .slide-party>img {
             width: 10%;
-            height: 450px;
+            height: auto;
 /*             object-fit: cover; */
             /* border-radius: 10px; */
             /* margin-top:1px ; */
