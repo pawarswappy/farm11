@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Stay in comfort and style at Infinity Group. Enjoy top-notch amenities, beautiful views, and warm hospitality. Book now for an unforgettable experience!">
-    <title>Hotel NA-Plot Section</title>
+    <title>Farm House</title>
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="galley.css">
+   
     <link rel="stylesheet" href="na-plot.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -18,6 +18,46 @@
 
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+        <style>
+        .hero {
+            background: url('https://source.unsplash.com/1600x600/?landscape') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .form-section {
+            background: #f8f9fa;
+            padding: 50px 0;
+        }
+        .map-container {
+            height: 100%;
+        }
+
+        .why-choose-us {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('your-background-image.jpg') center/cover;
+    color: white;
+}
+
+.choose-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.choose-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.icon i {
+    font-size: 40px;
+    color: #ffc107;
+}
+
+        
+    </style>
+    </style>
 </head>
 
 <body>
@@ -54,8 +94,8 @@
                     <li><a href="about.html" style="text-decoration: none;" >about</a></li>
                     <li><a href="Amenities.html" style="text-decoration: none;">Amenities</a></li>
                     <li><a href="Our-Gallary.html" style="text-decoration:none;"> Gallary</a></li>
-                    <li><a href="contact.html" style="text-decoration: none;">contact</a></li>
                     <li><a href="na-plot.html" style="text-decoration: underline; text-underline-offset: 10px;  text-decoration-thickness:2px ;">NA-Plot</a></li>
+                    <li><a href="contact.html" style="text-decoration: none;">contact</a></li>
                     
                 </ul>
                 <div class="hamburger">
@@ -105,298 +145,105 @@
 
 
     
-<!--   slider div   -->
- <div class="gallary-section">
 
-        <div class="text-content ">
-            <!-- <h4 style="color: #c79a6e; font-weight: bold; padding: 10px;">Your Events Are to Preisceus for Us</h4> -->
-            <h2><strong>Biodiversity and Wildlife </strong> </h2>
-            <p style=" text-align: justify; color: black; ">Nestled in the heart of nature, our Green
-                Forest Area is a haven of tranquility and biodiversity. With lush greenery, towering trees, and vibrant
-                wildlife, it offers a refreshing escape from urban life. The forest supports a rich ecosystem, providing
-                shelter to countless species of birds, animals, and plants. Whether you seek adventure through hiking
-                trails or peaceful relaxation amidst nature’s beauty, this forest is the perfect destination. We are
-                committed to preserving its natural balance through sustainable practices and conservation efforts.
-                Experience the serenity, breathe in the fresh air, and reconnect with nature in our Green Forest Area.
-            </p>
-<!--             <button class="btn readmore-btn">Read More</button> -->
-        </div>
-
-     <div class="slider">
-            <div class="slides">
-                <img src="green-forest4.webp" alt="Slide 1">
-                <img src="n1.webp" alt="Slide 2">
-                <img src="nature.webp" alt="Slide 3">
-                <img src="n2.webp" alt="Slide 4">
-
-               
-            </div>
-        </div>
-    </div>
-<!--    slider end  -->
-
-
-    
-    
-<!--  gallary section start -->
-
-
-       <section class="gallary-data">
-        <div class="main-slider">
-            <div class="room-images">
-                <div class="gallary-room">
-                    <img src="hourse.webp" alt="Image 1" onclick="openPopup(1)">
+ <section class="container mt-5">
+        <h2 class="text-center">Available Properties</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="https://source.unsplash.com/600x400/?house" class="card-img-top" alt="Bungalow">
+                    <div class="card-body">
+                        <h5 class="card-title">Luxury Bungalow</h5>
+                        <p class="card-text">Spacious and fully furnished bungalow with modern amenities.</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
                 </div>
             </div>
-            <div class="room-images">
-                <div class="gallary-room">
-                    <img src="playing2.webp" alt="Image 2" onclick="openPopup(2)">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="https://source.unsplash.com/600x400/?land" class="card-img-top" alt="NA Plot">
+                    <div class="card-body">
+                        <h5 class="card-title">NA Plots</h5>
+                        <p class="card-text">Well-planned NA plots with clear titles and legal approvals.</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
                 </div>
             </div>
-            <div class="room-images">
-                <div class="gallary-room">
-                    <img src="badmin.webp" alt="Image 3" onclick="openPopup(3)">
+        </div>
+    </section>
+   
+
+
+
+    <section class="why-choose-us py-5 mt-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Why Choose Us?</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="choose-card text-center p-4">
+                        <div class="icon mb-3">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>High-Quality Construction</h4>
+                        <p>We use the best materials and follow industry standards to ensure long-lasting structures.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="choose-card text-center p-4">
+                        <div class="icon mb-3">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Experienced Team</h4>
+                        <p>Our skilled professionals bring years of experience to every project we undertake.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="choose-card text-center p-4">
+                        <div class="icon mb-3">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Timely Project Completion</h4>
+                        <p>We value your time and complete projects within the agreed timeline, without compromising quality.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
 
-    
-    <div class="popup-slider-container" id="popup-slider">
-        <div class="popup-slider-content">
-            <span class="close-popup-btn" onclick="closePopup()">&times;</span>
-            <div class="inner-carousel" id="inner-carousel"></div>
-        </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.main-slider').slick({
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 3000,
-                responsive: [
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 1
-                        }
-                    }
-                ]
-            });
-        });
-
-        const carousels = {
-            1: ["stud-farm.webp", "stud-farm1.webp", "stud-farm2.webp"],
-            2: ["playing2.webp", "playing.webp", "playing3.webp"],
-            3: ["fam-enjoy.webp", "fam-enjoy2.webp", "fam-enjoy3.webp"]
-        };
-
-        function openPopup(index) {
-            document.getElementById('popup-slider').style.display = 'flex';
-            let sliderContainer = $('#inner-carousel');
-            sliderContainer.html('');
-            carousels[index].forEach(img => {
-                sliderContainer.append(`<img src="${img}" alt="Carousel Image">`);
-            });
-            
-            if (sliderContainer.hasClass('slick-initialized')) {
-                sliderContainer.slick('unslick');
-            }
-            
-            sliderContainer.slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                infinite: true,
-                dots: true,
-                arrows: true
-            });
-        }
-        
-        function closePopup() {
-            document.getElementById('popup-slider').style.display = 'none';
-            $('#inner-carousel').slick('unslick');
-        }
-    </script>
-    
-
-
-<!--  gallary section end    -->
-
-
-    
-<!--     carousal section start  -->
-
- <div class="container-topper" style="padding: 50px 10%;">
-        <h2 class="text-center">Visit Nearest Location</h2>
-     
-        <div class="carousel-containermoving">
-            <div class="carousel-wrapper">
-                <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="Kondana_Chaitya.webp" alt="Kondana Caves">
-                            <div class="carousel-caption" style="position: absolute; bottom: 0px; left: 0px;">
-                                <h2>Kondana Caves</h2>
-                                <p>Ulhas River in Karjat is a popular spot for rafting and kayaking, offering a range of
-                                    outdoor
-                                    activities including trekking and camping. </p>
-                            </div>
-                         </div>
-
-                        <div class="carousel-item">
-                            <img src="kothaligad-trek-in-maharashtra.webp" alt="Jain Temple">
-                            <div class="carousel-caption" style="position: absolute; bottom: 0px; left: 0px;">
-                                <h2>Kothaligadh (Peth) Fort</h2>
-                                <p>The fort structure is unique, perhaps resembling only the Karnala fort in terms of
-                                    appearance. Picture by Izzat Yaganagi</p>
-                            </div>
+    <section class="form-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h3>Enquire Now</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" required>
                         </div>
-
-                        <div class="carousel-item">
-                            <img src="Ranakpur-Jain-Temple.webp" alt="Ulhas Valley">
-                            <div class="carousel-caption" style="position: absolute; bottom: 0px; left: 0px;">
-                                <h2>Jain Temple</h2>
-                                <p>To reach the temple, one need to make its way through the brilliantly decorated the
-                                    entrance.
-                                    The main hall of the temple adorns the statue of the Lord Neminath, the 22nd Jain
-                                    Tirthankar. The temple is spread over two floors. The upper level of the main sanctum is
-                                    dedicated to Lord Shantinath, the 16th Jain Tirthankar.</p>
-                            </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
                         </div>
-
-                        <div class="carousel-item">
-                            <img src="ullas-vally.webp" alt="Kondeshwar Temple">
-                            <div class="carousel-caption" style="position: absolute; bottom: 0px; left: 0px;">
-                                <h2>Ulhas Valley</h2>
-                                <p>Ulhas valley is full of nature’s marvels. The lovely valley is incredibly green and has
-                                    heavenly vibes all across it. The valley encompasses ambrosial waterfalls and wondrous
-                                    water streams amidst lush green nature.</p>
-                            </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
                         </div>
-
-                        <div class="carousel-item">
-                            <img src="nd-studio.webp" alt="Kondeshwar Temple">
-                            <div class="carousel-caption" style="position: absolute; bottom: 0px; left: 0px;">
-                                <h2>ND Studio</h2>
-                                <p>The Studio is spread over 52 acres (210,000 m2) and was opened in 2005 and offers indoor
-                                    as well as outdoor shooting options. The Studio is privately owned by production
-                                    designer Nitin Chandrakant Desai </p>
-                            </div>
-                        </div>
-                        
-                        <div class="carousel-item">
-                            <img src="natural-disaster-landscape.jpg" alt="Kondeshwar Temple">
-                            <div class="carousel-caption" style="position: absolute; bottom: 0px; left: 0px;">
-                                <h2>Blackwater of Pali Bhutiwali Dam</h2>
-                                <p>The blackwaters of Pali Bhutivali Dam create a serene and mystical ambiance in
-                                    Maharashtra, India. Encircled by lush greenery, the dam's dark-hued waters offer a
-                                    tranquil retreat. The reflection of surrounding hills and vegetation on the lake's
-                                    surface enhances its scenic allure.</p>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="bhivpuri-wp.webp"
-                                alt="Kondeshwar Temple">
-                            <div class="carousel-caption" style="position: absolute; bottom: 0px; left: 0px;">
-                                <h2>Bhivpuri Waterfall</h2>
-                                <p>Beautiful waterfall and an easy trek. Plenty of places to park the vehicle. Must carry a
-                                    set of additional clothes to change after the trek. Lots of changing rooms available for
-                                    a very minimal cost.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="ulhas-river-rafting-in-maharashtra-price.webp"
-                                alt="Kondeshwar Temple">
-                            <div class="carousel-caption" style="position: absolute; bottom: 0px; left: 0px;">
-                                <h2>Rafting in Vaijanath</h2>
-                                <p>Experience the thrill of rafting in Karjat, probably one of the most fulfilling
-                                    adventures you'll witness.
-                                    Karjat River Rafting is located at Tata Power Road, Bhivpuri Camp, Karjat, Maharashtra.
-                                </p>
-                            </div>
-                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h3>Our Location</h3>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509345!2d144.9559283155043!3d-37.81720997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e0!2sMelbourne%2C%20Australia!5e0!3m2!1sen!2sin!4v1642651254173!5m2!1sen!2sin"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
-            
         </div>
-    </div>
-    <!-- carousal script section end -->
-<script>
-        function showContent(element) {
-            let captions = document.querySelectorAll('.carousel-caption');
-            captions.forEach(caption => caption.style.display = 'none');
-            element.querySelector('.carousel-caption').style.display = 'block';
-        }
-    </script>
-<!--     script end -->
-
-    
- <div class="container-topper" style="padding: 50px 10%;">
-        <h2 class="text-center" >Enjoying Every Moment</h2>
-     
-        <div class="slider-container-party" style="margin-top:20px;">
-            <div class="slider-party">
-                <div class="slide-party"><img src="wedding.webp" alt="Slide 1"></div>
-                <div class="slide-party"><img src="bday.webp" alt="Slide 2"></div>
-                <div class="slide-party"><img src="dinner.webp" alt="Slide 3"></div>
-                <div class="slide-party"><img src="fam1.webp" alt="Slide 4"></div>
-                <div class="slide-party"><img src="girls-party.webp " alt="Slide 5"></div>
-                <div class="slide-party"><img src="product.webp" alt="Slide 6"></div>
-                <div class="slide-party"><img src="wedd-party.webp" alt="Slide 7"></div>
-            </div>
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
-        </div>
-    </div>
-
-    <script>
-        let slideIndex = 0;
-        const slides = document.querySelector(".slider-party");
-
-        function moveSlide(n) {
-            slideIndex += n;
-            if (slideIndex < 0) slideIndex = 6;
-            if (slideIndex > 6) slideIndex = 0;
-            updateSlider();
-        }
-
-        function currentSlide(n) {
-            slideIndex = n;
-            updateSlider();
-        }
-
-        function updateSlider() {
-            slides.style.transform = `translateX(${-slideIndex * 100}%)`;
-        }
-
-         function autoSlide() {
-            moveSlide(1);
-            setTimeout(autoSlide, 3000);
-        }
-
-        updateSlider();
-        setTimeout(autoSlide, 3000);
-    </script>
-
+    </section>
 
 
     
