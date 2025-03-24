@@ -85,6 +85,8 @@ h1 {
     font-weight: 700;
     text-align: center;
     color: #ffffff;
+    font-size: 20px;
+    margin: auto 30px;
 }
 
 .text p a {
