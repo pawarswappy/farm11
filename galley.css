@@ -344,8 +344,7 @@ h1 {
 
            .custom-slider-item img {
             width: 500px;
-/*             height: 400px; */
-                height: auto;
+            height: 400px;
             max-height: 400px;
             object-fit: cover;
             border-radius: 5px;
