@@ -329,6 +329,7 @@ h1 {
             height: 400px;
             object-fit: cover;
             border-radius: 5px;
+             text-align: center;
         }
 
         .custom-slider-text {
