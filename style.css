@@ -169,6 +169,7 @@ header.sticky .nav-menu {
 .hero-content {
   flex: 1;
   max-width: 50%;
+  text-align:center;
 }
 
 .hero-content h1 {
@@ -184,6 +185,7 @@ header.sticky .nav-menu {
 .hero-content p {
   font-size: 1rem;
   color: #333;
+  text-align:start;
 }
 
 .highlight-text {
