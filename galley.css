@@ -1,5 +1,5 @@
 .Premium-gallary {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Montserrat';
     font-weight: normal;
     color: #444;
@@ -301,76 +301,80 @@ h1 {
 /* gallary section end */
 
 /* carousal section start */
-         .carousel-container-images {
-        padding: 30px 10%;
-    }
-
-    .carousel-item {
-        position: relative;
-        cursor: pointer;
-    }
-
-    .carousel-item>img {
-        height: 400px;
-        object-fit: cover;
-        width: 100%;
-        margin-top:50px;
-        
-    }
-
-    .carousel-caption {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
-        color: white;
-        padding: 15px;
-        text-align: center;
-        display: none;
-    }
-    .carousel-caption>h2{
-        color: #fff;
-    }
-    .carousel-caption>p {
-        line-height: 15px;
-    }
-
-    .carousel-item.active>.carousel-caption {
-        display: block;
-    }
-
-    @media (max-width: 768px) {
-        .carousel-item>img {
-            height: 300px;
+ .custom-sliders-wrapper {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 50px 10%;
         }
 
-        .carousel-caption {
+        .custom-slider-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .custom-slider-item {
+            display: none;
+            width: 100%;
+            text-align: center;
+            position: relative;
+        }
+
+        .custom-slider-item img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .custom-slider-text {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
             padding: 10px;
-            font-size: 14px;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .carousel-item>img {
-            height: 250px;
+            text-align: center;
         }
 
-        .carousel-caption>h2 {
-            font-size: 16px;
+        .custom-active {
+            display: block;
         }
 
-        .carousel-caption>p {
-            font-size: 12px;
+        .custom-prev,
+        .custom-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
         }
-    }
 
-    @media (max-width: 425px) {
-        .container-caption>h2 {
-            font-size: 12px;
-            margin-top: 100px;
+        .custom-prev {
+            left: 10px;
         }
-    }
+
+        .custom-next {
+            right: 10px;
+        }
+
+        .custom-gallery-title {
+            font-size: 1.8rem;
+            font-family: 'Montserrat';
+            font-weight: normal;
+            color: #444;
+            text-align: center;
+            margin: 2rem 0;
+        }
 
 
 /* carousal section end  */
