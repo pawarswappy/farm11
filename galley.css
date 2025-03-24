@@ -1,5 +1,5 @@
 .Premium-gallary {
-    font-size: 2rem;
+    font-size: 1rem;
     font-family: 'Montserrat';
     font-weight: normal;
     color: #444;
@@ -324,8 +324,8 @@ h1 {
             position: relative;
         }
 
-        .custom-slider-item img {
-            width: 100%;
+           .custom-slider-item img {
+            width: 400px;
             height: 400px;
             object-fit: cover;
             border-radius: 5px;
