@@ -334,7 +334,7 @@ h1 {
 
         .custom-slider-text {
             position: absolute;
-            bottom: 10px;
+            bottom: 0px;
             left: 0;
             width: 100%;
             background: rgba(0, 0, 0, 0.5);
