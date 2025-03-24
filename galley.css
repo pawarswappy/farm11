@@ -317,110 +317,7 @@ h1 {
 /* gallary section end */
 
 /* carousal section start */
-/*  .custom-sliders-wrapper {
-            
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 20px;
-            padding: 50px 10%;
-        }
 
-        .custom-slider-container {
-            position: relative;
-            width: 100%;
-             max-width: 500px;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        .custom-slider-item {
-            display: none;
-            width: 100%;
-            text-align: center;
-            position: relative;
-        }
-
-           .custom-slider-item img {
-            width: 500px;
-            height: 400px;
-            max-height: 400px;
-            object-fit: cover;
-            border-radius: 5px;
-             text-align: center;
-        }
-
-        .custom-slider-text {
-            position: absolute;
-            bottom: 0px;
-            left: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .custom-active {
-            display: block;
-        }
-
-        .custom-prev,
-        .custom-next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .custom-prev {
-            left: 10px;
-        }
-
-        .custom-next {
-            right: 10px;
-        }
-
-        .custom-gallery-title {
-            font-size: 1.5rem;
-            font-family: 'Montserrat';
-            font-weight: normal;
-            color: #444;
-            text-align: center;
-            margin: 2rem 0;
-        }
-
-custom-slider-text h2{
-    font-size:1.2rem;
-}
-
-  @media (max-width: 768px) {
-            .custom-sliders-wrapper {
-                flex-direction: column;
-                padding: 20px;
-            }
-
-            .custom-gallery-title {
-                font-size: 1.5rem;
-            }
-
-            .custom-prev,
-            .custom-next {
-                padding: 8px;
-                font-size: 14px;
-            }
-        } */
-
-
-
-
-/*//////////////////////////////  */
 
 .custom-sliders-wrapper {
     display: flex;
@@ -448,8 +345,7 @@ custom-slider-text h2{
 
 .custom-slider-item img {
     width: 100%;
-    height:400px; /* Maintains aspect ratio */
-    max-height: 400px; /* Restricts height for better display */
+    height:400px; 
     object-fit: cover;
     border-radius: 5px;
 }
@@ -494,7 +390,7 @@ custom-slider-text h2{
 
 .custom-gallery-title {
     font-size: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     font-weight: normal;
     color: #444;
     text-align: center;
