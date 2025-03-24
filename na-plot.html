@@ -132,6 +132,96 @@
 
          }
 
+         .container12 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        .hotel-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .hotel-card:hover {
+            transform: scale(1.05);
+        }
+        .carousel {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+        .carousel img {
+            width: 100%;
+            border-radius: 10px;
+            height: 220px;
+            object-fit: cover;
+            display: none;
+        }
+        .carousel img.active {
+            display: block;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+        .book-btn {
+            background: #ff6600;
+            color: white;
+            padding: 12px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .book-btn:hover {
+            background: #e65c00;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        .popup input {
+            width: 100%;
+            margin: 10px 0;
+            padding: 8px;
+        }
+        .close-btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border-radius: 50%;
+        }
+
 
 
 
@@ -358,7 +448,7 @@
 
  <section class="container ">
         <h2 class="text-center mt-3">____ Available Properties ____</h2>
-        <div class="row mt-4">
+<!--         <div class="row mt-4">
             <div class="col-md-6">
   
 
@@ -367,7 +457,90 @@
                 
 
             </div>
-        </div>
+        </div> -->
+
+
+
+     <div class="container12" id="hotelContainer"></div>
+
+    <!-- Booking Popup -->
+    <div id="bookingPopup" class="popup">
+        <button class="close-btn" onclick="closePopup()">&times;</button>
+        <h2 id="bookingPopupTitle">Book Your Stay</h2>
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Your Email">
+        <input type="date" id="date">
+        <button class="book-btn" onclick="confirmBooking()">Confirm</button>
+    </div>
+
+    <!-- Confirmation Popup -->
+    <div id="confirmationPopup" class="popup">
+        <button class="close-btn" onclick="closeConfirmationPopup()">&times;</button>
+        <h2>Your booking is confirmed!</h2>
+        <p>Thank you for booking with us.</p>
+    </div>
+
+    <script>
+        const hotels = [
+            { name: "Ridgeview Manor", location: "Mukteshwar, Uttarakhand", price: "20,001", images: ["https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW90b3JiaWtlfGVufDB8fDB8fHww", "ridgeview2.jpg", "ridgeview3.jpg", "ridgeview4.jpg"] },
+            { name: "Elfreda", location: "Vikramgad, Maharashtra", price: "7,000", images: ["https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW90b3JiaWtlfGVufDB8fDB8fHww", "elfreda2.jpg", "elfreda3.jpg", "elfreda4.jpg"] }
+        ];
+        
+        let hotelHTML = '';
+        hotels.forEach(hotel => {
+            hotelHTML += `
+                <div class="hotel-card">
+                    <div class="carousel">
+                        ${hotel.images.map((img, index) => `<img src="${img}" class="${index === 0 ? 'active' : ''}">`).join('')}
+                        <button class="prev" onclick="prevSlide(this)">&#10094;</button>
+                        <button class="next" onclick="nextSlide(this)">&#10095;</button>
+                    </div>
+                    <h2>${hotel.name}</h2>
+                    <p>${hotel.location}</p>
+                    <p class="price">From ₹${hotel.price} + GST</p>
+                    <button class="book-btn" onclick="openPopup('${hotel.name}')">Book Now</button>
+                </div>
+            `;
+        });
+
+        document.getElementById("hotelContainer").innerHTML = hotelHTML;
+
+        function openPopup(hotelName) {
+            document.getElementById("bookingPopup").style.display = "block";
+            document.getElementById("bookingPopupTitle").innerText = `Book Your Stay at ${hotelName}`;
+        }
+
+        function closePopup() {
+            document.getElementById("bookingPopup").style.display = "none";
+        }
+
+        function confirmBooking() {
+            closePopup();
+            document.getElementById("confirmationPopup").style.display = "block";
+        }
+
+        function closeConfirmationPopup() {
+            document.getElementById("confirmationPopup").style.display = "none";
+        }
+
+        function nextSlide(button) {
+            let carousel = button.parentElement;
+            let images = carousel.getElementsByTagName("img");
+            let activeIndex = [...images].findIndex(img => img.classList.contains("active"));
+            images[activeIndex].classList.remove("active");
+            let nextIndex = (activeIndex + 1) % images.length;
+            images[nextIndex].classList.add("active");
+        }
+
+        function prevSlide(button) {
+            let carousel = button.parentElement;
+            let images = carousel.getElementsByTagName("img");
+            let activeIndex = [...images].findIndex(img => img.classList.contains("active"));
+            images[activeIndex].classList.remove("active");
+            let prevIndex = (activeIndex - 1 + images.length) % images.length;
+            images[prevIndex].classList.add("active");
+        }
+    </script>
     </section>
    
 
