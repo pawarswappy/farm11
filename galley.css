@@ -321,6 +321,7 @@ h1 {
             
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             align-items: center;
             gap: 20px;
             padding: 50px 10%;
@@ -329,6 +330,7 @@ h1 {
         .custom-slider-container {
             position: relative;
             width: 100%;
+             max-width: 500px;
             overflow: hidden;
             border-radius: 10px;
         }
@@ -342,7 +344,9 @@ h1 {
 
            .custom-slider-item img {
             width: 500px;
-            height: 400px;
+/*             height: 400px; */
+                height: auto;
+            max-height: 400px;
             object-fit: cover;
             border-radius: 5px;
              text-align: center;
@@ -397,6 +401,22 @@ custom-slider-text h2{
     font-size:1.2rem;
 }
 
+  @media (max-width: 768px) {
+            .custom-sliders-wrapper {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .custom-gallery-title {
+                font-size: 1.5rem;
+            }
+
+            .custom-prev,
+            .custom-next {
+                padding: 8px;
+                font-size: 14px;
+            }
+        }
 
 /* carousal section end  */
 
