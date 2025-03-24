@@ -1,5 +1,5 @@
 .Premium-gallary {
-    font-size: 1rem;
+    font-size: 2rem;
     font-family: 'Montserrat';
     font-weight: normal;
     color: #444;
@@ -368,7 +368,7 @@ h1 {
         }
 
         .custom-gallery-title {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-family: 'Montserrat';
             font-weight: normal;
             color: #444;
