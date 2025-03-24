@@ -305,7 +305,7 @@ h1 {
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
-            align-items: center;
+/*             align-items: center; */
             gap: 20px;
             padding: 50px 10%;
         }
