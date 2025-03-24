@@ -1,4 +1,11 @@
-
+.Premium-gallary {
+    font-size: 2.5rem;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: #444;
+    text-align: center;
+    margin: 2rem 0;
+}
 .about-image-container {
     position: relative;
     width: 100%;
