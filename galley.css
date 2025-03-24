@@ -302,10 +302,10 @@ h1 {
 
 /* carousal section start */
  .custom-sliders-wrapper {
-            font-family: Arial, sans-serif;
+            
             display: flex;
             justify-content: center;
-/*             align-items: center; */
+            align-items: center;
             gap: 20px;
             padding: 50px 10%;
         }
@@ -376,6 +376,10 @@ h1 {
             text-align: center;
             margin: 2rem 0;
         }
+
+custom-slider-text h2{
+    font-size:1.5rem;
+}
 
 
 /* carousal section end  */
