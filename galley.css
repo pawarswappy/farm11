@@ -428,7 +428,7 @@ custom-slider-text h2{
     flex-wrap: wrap;
     align-items: center;
     gap: 20px;
-    padding: 50px 10%;
+/*     padding: 50px 10%; */
 }
 
 .custom-slider-container {
@@ -448,7 +448,7 @@ custom-slider-text h2{
 
 .custom-slider-item img {
     width: 100%;
-    height: auto; /* Maintains aspect ratio */
+    height:400px; /* Maintains aspect ratio */
     max-height: 400px; /* Restricts height for better display */
     object-fit: cover;
     border-radius: 5px;
@@ -509,7 +509,7 @@ custom-slider-text h2{
     }
 
     .custom-gallery-title {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .custom-slider-container {
@@ -521,7 +521,7 @@ custom-slider-text h2{
     }
 
     .custom-slider-text {
-        font-size: 0.9rem;
+        font-size: 0.5rem;
         padding: 8px;
     }
 
