@@ -493,8 +493,8 @@
 
     <script>
         const hotels = [
-            { name: "Bungalows", location: " At Kothimbe Village,Kashele, Tal- Karjat, Dist Raigad- 410201", price: "20,001", images: ["banglow1.webp", "banglow2.webp", "banglow3.webp", "banglow5.webp"] },
-            { name: "NA/PLOT", location: "At Kothimbe Village,Kashele, Tal- Karjat, Dist Raigad- 410201", price: "7,000", images: ["banglow6.webp", "banglow7.webp"] }
+            { name: "Bungalows", location: " At Kothimbe Village,Kashele, Tal- Karjat, Dist Raigad- 410201", price: "1CR", images: ["banglow1.webp", "banglow2.webp", "banglow3.webp", "banglow5.webp"] },
+            { name: "NA/PLOT", location: "At Kothimbe Village,Kashele, Tal- Karjat, Dist Raigad- 410201", price: "1CR", images: ["banglow6.webp", "banglow7.webp"] }
         ];
         
         let hotelHTML = '';
@@ -508,7 +508,7 @@
                     </div>
                     <h2>${hotel.name}</h2>
                     <p>${hotel.location}</p>
-                    <p class="price">From ₹${hotel.price} + GST</p>
+                    <p class="price">From ₹${hotel.price} +Goverment Taxes</p>
                     <button class="book-btn" onclick="openPopup('${hotel.name}')">Book Appointment Now</button>
                 </div>
             `;
