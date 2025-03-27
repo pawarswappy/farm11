@@ -43,12 +43,13 @@ a {
 .flex1 {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 /*-------------head--------- */
 .head {
   height: 10vh;
-  line-height: 10vh;
+/*   line-height: 10vh; */
   /* max-width: 1140px; */
   padding-left: 5%;
   padding-right: 5%;
