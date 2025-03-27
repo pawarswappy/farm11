@@ -549,8 +549,9 @@ header.sticky ul li a {
 
 .home h1 {
 /*   font-family: 'Great Vibes', cursive; */
-      font-family: "Cookie", cursive;
-  font-size: 78px;
+     font-family: 'Anton', sans-serif;
+/*   font-size: 70px; */
+   font-size: clamp(40px, 7vw, 70px);
   color: white;
   padding-top: 15%;
 }
