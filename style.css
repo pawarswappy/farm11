@@ -53,6 +53,16 @@ a {
   padding-left: 5%;
   padding-right: 5%;
 }
+@media (max-width: 768px) {
+  .head {
+ 
+  /* max-width: 1140px; */
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+}
+
 
 .head i {
   width: 30px;
