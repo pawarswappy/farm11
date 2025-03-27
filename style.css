@@ -552,7 +552,7 @@ header.sticky ul li a {
 /*   font-family: 'Great Vibes', cursive; */
      font-family: 'Anton', sans-serif;
 /*   font-size: 70px; */
-   font-size: clamp(40px, 7vw, 70px);
+   font-size: clamp(30px, 7vw, 70px);
   color: white;
   padding-top: 15%;
   font-weight: bold;
