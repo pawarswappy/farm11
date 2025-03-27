@@ -53,7 +53,7 @@ a {
   /* max-width: 1140px; */
   padding-left: 5%;
   padding-right: 5%;
-  font-weight: bold;
+  
 }
 @media (max-width: 768px) {
   .head {
@@ -555,6 +555,7 @@ header.sticky ul li a {
    font-size: clamp(40px, 7vw, 70px);
   color: white;
   padding-top: 15%;
+  font-weight: bold;
 }
 
 .home p {
