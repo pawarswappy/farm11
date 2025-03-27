@@ -379,7 +379,7 @@ header.sticky ul li a {
 }
 .head_contact img{
   height: 60px !important;
-  width: 200px !important;
+/*   width: 200px !important; */
  }
 
 @media only screen and (max-width:769px) {
