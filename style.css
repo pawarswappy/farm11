@@ -304,6 +304,7 @@ header.sticky .nav-menu {
 .navbar {
   display: flex;
   align-items: center;
+  padding: 0 !important;
 }
 
 .hamburger {
