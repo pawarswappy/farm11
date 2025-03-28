@@ -457,8 +457,8 @@ h1 {
         .slide-party>img {
             width: 100%;
             height: auto;
-/*             object-fit: cover; */
-            /* border-radius: 10px; */
+/*     object-fit: cover; */
+            border-radius: 10px;
             /* margin-top:1px ; */
         }
 
