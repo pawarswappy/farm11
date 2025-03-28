@@ -398,6 +398,12 @@ h1 {
 }
 
 /* Mobile & Tablet View */
+
+@media (max-width: 1024px) {
+    .custom-slider-item img {
+        max-height: 350px; /* Smaller height for smaller screens */
+    }
+    }
 @media (max-width: 768px) {
     .custom-sliders-wrapper {
         flex-direction: column;
@@ -413,7 +419,7 @@ h1 {
     }
 
     .custom-slider-item img {
-        max-height: 300px; /* Smaller height for smaller screens */
+        max-height: 350px; /* Smaller height for smaller screens */
     }
 
     .custom-slider-text {
