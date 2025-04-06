@@ -280,6 +280,9 @@ header.sticky .nav-menu {
 }
 
 @media (max-width: 480px) {
+   header li {
+    margin: 3rem 0 !important;
+  }
   .hero {
     padding: 20px;
   }
@@ -294,6 +297,10 @@ header.sticky .nav-menu {
     font-size: 0.85rem;
     color:#fff;
   }
+
+    .nav-menu {
+    display: flex;
+    justify-content: start !important;
 }
 
 
@@ -435,11 +442,13 @@ header.sticky ul li a {
 
   header.sticky .nav-menu {
     top: 3rem;
+    height: 100%;
   }
 
   header ul li a {
     color: white;
   }
+
 
   .nav-menu.active {
     left: 0;
