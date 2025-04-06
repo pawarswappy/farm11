@@ -280,9 +280,7 @@ header.sticky .nav-menu {
 }
 
 @media (max-width: 480px) {
-   header li {
-    margin: 3rem 0 !important;
-  }
+
   .hero {
     padding: 20px;
   }
@@ -298,9 +296,6 @@ header.sticky .nav-menu {
     color:#fff;
   }
 
-    .nav-menu {
-    display: flex;
-    justify-content: start !important;
 }
 
 
